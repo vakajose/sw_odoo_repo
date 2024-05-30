@@ -1,0 +1,122 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="colegio.profesor_list">
+      <field name="name">colegio profesor list</field>
+      <field name="model">colegio.profesor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="fecha_nacimiento"/>
+          <field name="edad"/>
+          <field name="saldo"/>
+          <field name="estado"/>
+          <field name="grado"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="colegio.profesor_form">
+      <field name="name">colegio profesor form</field>
+      <field name="model">colegio.profesor</field>
+      <field name="arch" type="xml">
+        <form>
+        <group>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="edad"/>
+          <field name="fecha_nacimiento"/>
+          <field name="saldo"/>
+          <field name="estado"/>
+          <field name="grado"/>
+          
+        </group>
+        </form>
+      </field>
+    </record>
+
+<!--Alumno-->
+
+    <record model="ir.ui.view" id="colegio.alumno_list">
+      <field name="name">colegio alumno list</field>
+      <field name="model">colegio.alumno</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="fecha_nacimiento"/>
+          <field name="edad"/>
+          <field name="grado"/>
+          <field name="direccion"/>
+          <field name="carnet_identidad"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="colegio.alumno_form">
+      <field name="name">colegio alumno form</field>
+      <field name="model">colegio.alumno</field>
+      <field name="arch" type="xml">
+        <form>
+        <group>
+          <field name="name"/>
+          <field name="profesor"/>
+          <field name="edad"/>
+          <field name="fecha_nacimiento"/>
+          <field name="direccion"/>
+          <field name="carnet_identidad"/>
+          <field name="grado"/>
+        </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="colegio.profesor_action_window">
+      <field name="name">colegio profesor window</field>
+      <field name="res_model">colegio.profesor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="colegio.alumno_action_window">
+      <field name="name">colegio alumno window</field>
+      <field name="res_model">colegio.alumno</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="colegio.action_server">
+      <field name="name">colegio server</field>
+      <field name="model_id" ref="model_colegio_colegio"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Colegio" id="colegio.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Administracion" id="colegio.profesor_menu_1" parent="colegio.menu_root"/>
+<!--    <menuitem name="Menu 2" id="colegio.menu_2" parent="colegio.menu_root"/>
+-->
+    <!-- actions -->
+
+    <menuitem name="Profesor" id="colegio.profesor_menu_1_list" parent="colegio.profesor_menu_1"
+              action="colegio.profesor_action_window"/>
+    <menuitem name="Alumno" id="colegio.alumno_menu_1_list" parent="colegio.profesor_menu_1"
+              action="colegio.alumno_action_window"/>
+<!--   <menuitem name="Server to list" id="colegio" parent="colegio.menu_2"
+              action="colegio.action_server"/>
+-->
+  </data>
+</odoo>
