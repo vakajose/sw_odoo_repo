@@ -23,10 +23,8 @@ class profesor(models.Model):
         default = "primaria",
         required = True,
      )
-
-
-     
-     
+     alumno = fields.One2many("colegio.alumno", inverse_name="profesor", string ="Alumno")
+    
 class alumno(models.Model):
      _name = 'colegio.alumno'
      _description = 'alumnos'
@@ -47,3 +45,9 @@ class alumno(models.Model):
         default = "primaria",
         required = True,
      )
+
+class materia(models.Model):
+    _name = 'colegio.materia'
+    _description = 'materias'
+
+    name = fields.Char(string="Nombre", required=True)

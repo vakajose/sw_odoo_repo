@@ -30,7 +30,7 @@
           <field name="saldo"/>
           <field name="estado"/>
           <field name="grado"/>
-          
+          <field name="alumno"/>
         </group>
         </form>
       </field>
@@ -84,6 +84,12 @@
       <field name="res_model">colegio.alumno</field>
       <field name="view_mode">tree,form</field>
     </record>
+
+    <record model="ir.actions.act_window" id="colegio.materia_action_window">
+      <field name="name">colegio materia window</field>
+      <field name="res_model">colegio.materia</field>
+      <field name="view_mode">tree,form</field>
+    </record>
     <!-- server action to the one above -->
 <!--
     <record model="ir.actions.server" id="colegio.action_server">
@@ -115,6 +121,8 @@
               action="colegio.profesor_action_window"/>
     <menuitem name="Alumno" id="colegio.alumno_menu_1_list" parent="colegio.profesor_menu_1"
               action="colegio.alumno_action_window"/>
+    <menuitem name="Materia" id="colegio.materia_menu_1_list" parent="colegio.profesor_menu_1"
+              action="colegio.materia_action_window"/>
 <!--   <menuitem name="Server to list" id="colegio" parent="colegio.menu_2"
               action="colegio.action_server"/>
 -->
