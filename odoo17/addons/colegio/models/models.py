@@ -73,6 +73,7 @@ class Curso(models.Model):
     nivel_gestion_id = fields.Many2one('colegio.nivelGestion', string='Nivel de Gestión')
     inscripcion_ids = fields.One2many('colegio.inscripcion', 'curso_id', string='Inscripciones')
 
+
 class Inscripcion(models.Model):
     _name = 'colegio.inscripcion'
     _description = 'Inscripción'
@@ -80,6 +81,8 @@ class Inscripcion(models.Model):
     id = fields.Integer(string='ID', required=True)
     curso_id = fields.Many2one('colegio.curso', string='Curso', required=True)
     estudiante_id = fields.Many2one('colegio.estudiante', string='Estudiante', required=True)
+    resumen_calificacion_ids = fields.One2many('colegio.resumenCalificacion', 'inscripcion_id', string='Resumenes de Calificaciones')
+
 
 class Estudiante(models.Model):
     _name = 'colegio.estudiante'
@@ -121,11 +124,69 @@ class Apoderado(models.Model):
     parentesco_ids = fields.One2many('colegio.parentesco', 'apoderado_id', string='Parentescos')
 
 
+class Asignatura(models.Model):
+    _name = 'colegio.asignatura'
+    _description = 'Asignatura'
+
+    id = fields.Integer(string='ID', required=True)
+    nombre = fields.Char(string='Nombre', required=True)
+    asignacion_ids = fields.One2many('colegio.asignacion', 'asignatura_id', string='Asignaciones')
+
+
+class PlanEstudio(models.Model):
+    _name = 'colegio.planEstudio'
+    _description = 'Plan de Estudio'
+
+    id = fields.Integer(string='ID', required=True)
+    dia = fields.Selection([
+        ('lunes', 'Lunes'),
+        ('martes', 'Martes'),
+        ('miercoles', 'Miércoles'),
+        ('jueves', 'Jueves'),
+        ('viernes', 'Viernes'),
+        ('sabado', 'Sábado'),
+        ('domingo', 'Domingo'),
+    ], string='Día', required=True)
+    inicio = fields.Datetime(string='Inicio', required=True)
+    fin = fields.Datetime(string='Fin', required=True)
+    asignacion_ids = fields.One2many('colegio.asignacion', 'plan_estudio_id', string='Asignaciones')
 
 
 
+class Asignacion(models.Model):
+    _name = 'colegio.asignacion'
+    _description = 'Asignación'
 
-#######################
+    id = fields.Integer(string='ID', required=True)
+    profesor_id = fields.Many2one('colegio.profesor', string='Profesor', required=True)
+    curso_id = fields.Many2one('colegio.curso', string='Curso', required=True)
+    asignatura_id = fields.Many2one('colegio.asignatura', string='Asignatura', required=True)
+    plan_estudio_id = fields.Many2one('colegio.planEstudio', string='Plan de Estudio', required=True)
+    resumen_calificacion_ids = fields.One2many('colegio.resumenCalificacion', 'asignacion_id', string='Resumen de Calificaciones')
+
+
+class ResumenCalificacion(models.Model):
+    _name = 'colegio.resumenCalificacion'
+    _description = 'Resumen de Calificación'
+
+    id = fields.Integer(string='ID', required=True)
+    promedio = fields.Float(string='Promedio', required=True)
+    asignacion_id = fields.Many2one('colegio.asignacion', string='Asignación', required=True)
+    calificacion_ids = fields.One2many('colegio.calificacion', 'resumen_calificacion_id', string='Calificaciones')
+    inscripcion_id = fields.Many2one('colegio.inscripcion', string='Inscripción', required=True)
+
+
+class Calificacion(models.Model):
+    _name = 'colegio.calificacion'
+    _description = 'Calificación'
+
+    id = fields.Integer(string='ID', required=True)
+    nota = fields.Float(string='Nota', required=True)
+    periodo = fields.Integer(string='Periodo', required=True)
+    resumen_calificacion_id = fields.Many2one('colegio.resumenCalificacion', string='Resumen de Calificación', required=True)
+
+
+####################### ANTIGUA TABLA
 
 class profesor(models.Model):
      _name = 'colegio.profesor'
