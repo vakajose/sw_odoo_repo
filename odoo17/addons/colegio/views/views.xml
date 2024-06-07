@@ -2,7 +2,7 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="colegio.profesor_list">
+    <!-- <record model="ir.ui.view" id="colegio.profesor_list">
       <field name="name">colegio profesor list</field>
       <field name="model">colegio.profesor</field>
       <field name="arch" type="xml">
@@ -34,11 +34,11 @@
         </group>
         </form>
       </field>
-    </record>
+    </record> -->
 
 <!--Alumno-->
 
-    <record model="ir.ui.view" id="colegio.alumno_list">
+    <!-- <record model="ir.ui.view" id="colegio.alumno_list">
       <field name="name">colegio alumno list</field>
       <field name="model">colegio.alumno</field>
       <field name="arch" type="xml">
@@ -69,11 +69,11 @@
         </group>
         </form>
       </field>
-    </record>
+    </record> -->
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="colegio.profesor_action_window">
+    <!-- <record model="ir.actions.act_window" id="colegio.profesor_action_window">
       <field name="name">colegio profesor window</field>
       <field name="res_model">colegio.profesor</field>
       <field name="view_mode">tree,form</field>
@@ -83,7 +83,7 @@
       <field name="name">colegio alumno window</field>
       <field name="res_model">colegio.alumno</field>
       <field name="view_mode">tree,form</field>
-    </record>
+    </record> -->
     <!-- server action to the one above -->
 <!--
     <record model="ir.actions.server" id="colegio.action_server">
@@ -102,19 +102,19 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="Colegio" id="colegio.menu_root"/>
+    <!-- <menuitem name="Colegio" id="colegio.menu_root"/> -->
 
     <!-- menu categories -->
 
-    <menuitem name="Administracion" id="colegio.profesor_menu_1" parent="colegio.menu_root"/>
+    <!-- <menuitem name="Administracion" id="colegio.profesor_menu_1" parent="colegio.menu_root"/> -->
 <!--    <menuitem name="Menu 2" id="colegio.menu_2" parent="colegio.menu_root"/>
 -->
     <!-- actions -->
 
-    <menuitem name="Profesor" id="colegio.profesor_menu_1_list" parent="colegio.profesor_menu_1"
+    <!-- <menuitem name="Profesor" id="colegio.profesor_menu_1_list" parent="colegio.profesor_menu_1"
               action="colegio.profesor_action_window"/>
     <menuitem name="Alumno" id="colegio.alumno_menu_1_list" parent="colegio.profesor_menu_1"
-              action="colegio.alumno_action_window"/>
+              action="colegio.alumno_action_window"/> -->
 <!--   <menuitem name="Server to list" id="colegio" parent="colegio.menu_2"
               action="colegio.action_server"/>
 -->

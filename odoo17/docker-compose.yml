@@ -12,7 +12,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
-    entrypoint: "/usr/bin/odoo -c /etc/odoo/odoo.conf --dev all"
+    entrypoint: "/usr/bin/odoo -c /etc/odoo/odoo.conf --dev=all"
   db:
     container_name: ${DB_HOST}
     image: ${DB_IMAGE}

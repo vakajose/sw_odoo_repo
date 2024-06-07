@@ -4,7 +4,7 @@ from odoo import models, fields # type: ignore
 
 
 class UnidadEducativa(models.Model):
-    _name = 'colegio.unidadEducativa'
+    _name = 'colegio.unidad.educativa'
     _description = 'Unidad Educativa'
 
     id = fields.Integer(string='ID', required=True)
@@ -13,11 +13,11 @@ class UnidadEducativa(models.Model):
     gestion_ids = fields.One2many('colegio.gestion', 'unidad_educativa_id', string='Gestiones')
 
 
-class TipoGestion(models.Model):
-    _name = 'colegio.tipoGestion'
-    _description = 'Tipo de Gestión'
+# class TipoGestion(models.Model):
+#     _name = 'colegio.tipo.gestion'
+#     _description = 'Tipo de Gestión'
 
-    nombre = fields.Char(string='Nombre', required=True)
+#     nombre = fields.Char(string='Nombre', required=True)
 
 class Gestion(models.Model):
     _name = 'colegio.gestion'
@@ -25,13 +25,18 @@ class Gestion(models.Model):
 
     id = fields.Integer(string='ID', required=True)
     anio = fields.Integer(string='Año', required=True)
-    tipo_gestion_id = fields.Many2one('colegio.tipoGestion', string='Tipo de Gestión', required=True)
-    unidad_educativa_id = fields.Many2one('colegio.unidadEducativa', string='Unidad Educativa', required=True)
-    nivel_gestion_ids = fields.One2many('colegio.nivelGestion', 'gestion_id', string='Niveles de Gestión')
+    tipo_gestion = fields.Selection([
+        ('bimestral', 'Bimestral'),
+        ('trimestral', 'trimestral'),
+        ('semestral', 'semestral'),
+        ('anual', 'Anual'),
+    ], string='Tipo de Gestion', required=True)
+    unidad_educativa_id = fields.Many2one('colegio.unidad.educativa', string='Unidad Educativa', required=True)
+    nivel_gestion_ids = fields.One2many('colegio.nivel.gestion', 'gestion_id', string='Niveles de Gestión')
 
 
 class NivelGestion(models.Model):
-    _name = 'colegio.nivelGestion'
+    _name = 'colegio.nivel.gestion'
     _description = 'Nivel de Gestión'
 
     id = fields.Integer(string='ID', required=True)
@@ -44,7 +49,7 @@ class Nivel(models.Model):
 
     id = fields.Integer(string='ID', required=True)
     nombre = fields.Char(string='Nombre', required=True)
-    nivel_gestion_ids = fields.One2many('colegio.nivelGestion', 'nivel_id', string='Niveles de Gestión')
+    nivel_gestion_ids = fields.One2many('colegio.nivel.gestion', 'nivel_id', string='Niveles de Gestión')
 
 
 class Profesor(models.Model):
@@ -59,7 +64,7 @@ class Profesor(models.Model):
     fecha_nacimiento = fields.Date(string='Fecha de Nacimiento')
     asignaturas = fields.Char(string='Asignaturas')
     carga_horaria = fields.Integer(string='Carga Horaria')
-    curso_ids = fields.One2many('colegio.curso', 'tutor_id', string='Cursos')
+    curso_ids = fields.One2many('colegio.curso', 'profesor_id', string='Cursos')
 
 
 class Curso(models.Model):
@@ -69,8 +74,8 @@ class Curso(models.Model):
     id = fields.Integer(string='ID', required=True)
     nro = fields.Integer(string='Número', required=True)
     paralelo = fields.Char(string='Paralelo', required=True)
-    tutor_id = fields.Many2one('colegio.profesor', string='Tutor')
-    nivel_gestion_id = fields.Many2one('colegio.nivelGestion', string='Nivel de Gestión')
+    profesor_id = fields.Many2one('colegio.profesor', string='Profesor')
+    nivel_gestion_id = fields.Many2one('colegio.nivel.gestion', string='Nivel de Gestión')
     inscripcion_ids = fields.One2many('colegio.inscripcion', 'curso_id', string='Inscripciones')
 
 
@@ -81,7 +86,7 @@ class Inscripcion(models.Model):
     id = fields.Integer(string='ID', required=True)
     curso_id = fields.Many2one('colegio.curso', string='Curso', required=True)
     estudiante_id = fields.Many2one('colegio.estudiante', string='Estudiante', required=True)
-    resumen_calificacion_ids = fields.One2many('colegio.resumenCalificacion', 'inscripcion_id', string='Resumenes de Calificaciones')
+    resumen_calificacion_ids = fields.One2many('colegio.resumen.calificacion', 'inscripcion_id', string='Resumenes de Calificaciones')
 
 
 class Estudiante(models.Model):
@@ -134,7 +139,7 @@ class Asignatura(models.Model):
 
 
 class PlanEstudio(models.Model):
-    _name = 'colegio.planEstudio'
+    _name = 'colegio.plan.estudio'
     _description = 'Plan de Estudio'
 
     id = fields.Integer(string='ID', required=True)
@@ -161,12 +166,12 @@ class Asignacion(models.Model):
     profesor_id = fields.Many2one('colegio.profesor', string='Profesor', required=True)
     curso_id = fields.Many2one('colegio.curso', string='Curso', required=True)
     asignatura_id = fields.Many2one('colegio.asignatura', string='Asignatura', required=True)
-    plan_estudio_id = fields.Many2one('colegio.planEstudio', string='Plan de Estudio', required=True)
-    resumen_calificacion_ids = fields.One2many('colegio.resumenCalificacion', 'asignacion_id', string='Resumen de Calificaciones')
+    plan_estudio_id = fields.Many2one('colegio.plan.estudio', string='Plan de Estudio', required=True)
+    resumen_calificacion_ids = fields.One2many('colegio.resumen.calificacion', 'asignacion_id', string='Resumen de Calificaciones')
 
 
 class ResumenCalificacion(models.Model):
-    _name = 'colegio.resumenCalificacion'
+    _name = 'colegio.resumen.calificacion'
     _description = 'Resumen de Calificación'
 
     id = fields.Integer(string='ID', required=True)
@@ -183,52 +188,52 @@ class Calificacion(models.Model):
     id = fields.Integer(string='ID', required=True)
     nota = fields.Float(string='Nota', required=True)
     periodo = fields.Integer(string='Periodo', required=True)
-    resumen_calificacion_id = fields.Many2one('colegio.resumenCalificacion', string='Resumen de Calificación', required=True)
+    resumen_calificacion_id = fields.Many2one('colegio.resumen.calificacion', string='Resumen de Calificación', required=True)
 
 
 ####################### ANTIGUA TABLA
 
-class profesor(models.Model):
-     _name = 'colegio.profesor'
-     _description = 'profesor'
+# class profesor(models.Model):
+#      _name = 'colegio.profesor'
+#      _description = 'profesor'
 
-     name = fields.Char(string="Nombre", required=True)
-     description =  fields.Text(string="Descripcion")
-     edad = fields.Integer(string="Edad", required=True)
-     fecha_nacimiento = fields.Date(string ="Fecha de Nacimiento")
-     saldo = fields.Float(string ="Saldo")
-     estado = fields.Boolean(string ="Estado del profesor")
-     grado = fields.Selection(
-        [
-            ("basico","Basico"),
-            ("primaria","Primaria"),
-            ("secundaria","Secundaria"),
-        ],
-        string = "Grado",
-        default = "primaria",
-        required = True,
-     )
+#      name = fields.Char(string="Nombre", required=True)
+#      description =  fields.Text(string="Descripcion")
+#      edad = fields.Integer(string="Edad", required=True)
+#      fecha_nacimiento = fields.Date(string ="Fecha de Nacimiento")
+#      saldo = fields.Float(string ="Saldo")
+#      estado = fields.Boolean(string ="Estado del profesor")
+#      grado = fields.Selection(
+#         [
+#             ("basico","Basico"),
+#             ("primaria","Primaria"),
+#             ("secundaria","Secundaria"),
+#         ],
+#         string = "Grado",
+#         default = "primaria",
+#         required = True,
+#      )
 
 
      
      
-class alumno(models.Model):
-     _name = 'colegio.alumno'
-     _description = 'alumnos'
+# class alumno(models.Model):
+#      _name = 'colegio.alumno'
+#      _description = 'alumnos'
 
-     name = fields.Char(string="Nombre", required=True)
-     profesor = fields.Many2one("colegio.profesor")
-     edad = fields.Integer(string="Edad", required=True)
-     fecha_nacimiento = fields.Date(string ="Fecha de Nacimiento")
-     direccion = fields.Text(string="direccion")
-     carnet_identidad = fields.Text(string = "carnet de identidad")
-     grado = fields.Selection(
-        [
-            ("basico","Basico"),
-            ("primaria","Primaria"),
-            ("secundaria","Secundaria"),
-        ],
-        string = "Grado",
-        default = "primaria",
-        required = True,
-     )
+#      name = fields.Char(string="Nombre", required=True)
+#      profesor = fields.Many2one("colegio.profesor")
+#      edad = fields.Integer(string="Edad", required=True)
+#      fecha_nacimiento = fields.Date(string ="Fecha de Nacimiento")
+#      direccion = fields.Text(string="direccion")
+#      carnet_identidad = fields.Text(string = "carnet de identidad")
+#      grado = fields.Selection(
+#         [
+#             ("basico","Basico"),
+#             ("primaria","Primaria"),
+#             ("secundaria","Secundaria"),
+#         ],
+#         string = "Grado",
+#         default = "primaria",
+#         required = True,
+#      )
