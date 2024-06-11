@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="1" model="colegio.unidad.educativa">
+            <field name="nombre">Unidad Educativa 1</field>
+            <field name="tipo">fiscal</field>
+        </record>
+        <record id="2" model="colegio.unidad.educativa">
+            <field name="nombre">Unidad Educativa 2</field>
+            <field name="tipo">convenio</field>
+        </record>
+        <record id="3" model="colegio.unidad.educativa">
+            <field name="nombre">Unidad Educativa 3</field>
+            <field name="tipo">particular</field>
+        </record>
+        <record id="4" model="colegio.unidad.educativa">
+            <field name="nombre">Unidad Educativa 4</field>
+            <field name="tipo">particular</field>
+        </record>
+        <record id="5" model="colegio.unidad.educativa">
+            <field name="nombre">Unidad Educativa 5</field>
+            <field name="tipo">fiscal</field>
+        </record>
+    </data>
+</odoo>

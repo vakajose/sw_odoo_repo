@@ -1,1 +1,10 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_colegio_unidad_educativa,colegio.unidad.educativa,model_colegio_unidad_educativa,base.group_user,1,1,1,1
+access_colegio_gestion,colegio.gestion,model_colegio_gestion,base.group_user,1,1,1,1
+access_colegio_nivel_gestion,colegio.nivel.gestion,model_colegio_nivel_gestion,base.group_user,1,1,1,1
+access_colegio_nivel,colegio.nivel,model_colegio_nivel,base.group_user,1,1,1,1
+access_colegio_profesor,colegio.profesor,model_colegio_profesor,base.group_user,1,1,1,1
+access_colegio_curso,colegio.curso,model_colegio_curso,base.group_user,1,1,1,1
+access_colegio_inscripcion,colegio.inscripcion,model_colegio_inscripcion,base.group_user,1,1,1,1
+access_colegio_estudiante,colegio.estudiante,model_colegio_estudiante,base.group_user,1,1,1,1
+access_colegio_asignatura,colegio.asignatura,model_colegio_asignatura,base.group_user,1,1,1,1

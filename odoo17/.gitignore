@@ -2,6 +2,7 @@ __pycache__/
 .vscode/
 .idea/
 addons-custom-local/
+odoo/
 *.pyc
 .user_data_uid_*
 chromedriver_*

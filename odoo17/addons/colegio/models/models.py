@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields # type: ignore
+from odoo import models, fields, api
 
 
 class UnidadEducativa(models.Model):
@@ -12,6 +12,10 @@ class UnidadEducativa(models.Model):
     tipo = fields.Char(string='Tipo', required=True)
     gestion_ids = fields.One2many('colegio.gestion', 'unidad_educativa_id', string='Gestiones')
 
+    #Funcion para retornar el listado de unidades educativas
+    def get_unidades_educativas(self):
+        unidades = self.search([('id', '=', 2)])
+        return unidades.read(['id', 'nombre', 'tipo'])
 
 # class TipoGestion(models.Model):
 #     _name = 'colegio.tipo.gestion'
@@ -189,51 +193,3 @@ class Calificacion(models.Model):
     nota = fields.Float(string='Nota', required=True)
     periodo = fields.Integer(string='Periodo', required=True)
     resumen_calificacion_id = fields.Many2one('colegio.resumen.calificacion', string='Resumen de Calificación', required=True)
-
-
-####################### ANTIGUA TABLA
-
-# class profesor(models.Model):
-#      _name = 'colegio.profesor'
-#      _description = 'profesor'
-
-#      name = fields.Char(string="Nombre", required=True)
-#      description =  fields.Text(string="Descripcion")
-#      edad = fields.Integer(string="Edad", required=True)
-#      fecha_nacimiento = fields.Date(string ="Fecha de Nacimiento")
-#      saldo = fields.Float(string ="Saldo")
-#      estado = fields.Boolean(string ="Estado del profesor")
-#      grado = fields.Selection(
-#         [
-#             ("basico","Basico"),
-#             ("primaria","Primaria"),
-#             ("secundaria","Secundaria"),
-#         ],
-#         string = "Grado",
-#         default = "primaria",
-#         required = True,
-#      )
-
-
-     
-     
-# class alumno(models.Model):
-#      _name = 'colegio.alumno'
-#      _description = 'alumnos'
-
-#      name = fields.Char(string="Nombre", required=True)
-#      profesor = fields.Many2one("colegio.profesor")
-#      edad = fields.Integer(string="Edad", required=True)
-#      fecha_nacimiento = fields.Date(string ="Fecha de Nacimiento")
-#      direccion = fields.Text(string="direccion")
-#      carnet_identidad = fields.Text(string = "carnet de identidad")
-#      grado = fields.Selection(
-#         [
-#             ("basico","Basico"),
-#             ("primaria","Primaria"),
-#             ("secundaria","Secundaria"),
-#         ],
-#         string = "Grado",
-#         default = "primaria",
-#         required = True,
-#      )
