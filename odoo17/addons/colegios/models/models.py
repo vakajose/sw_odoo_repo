@@ -7,6 +7,7 @@ class alumno(models.Model):
 
     ci = fields.Char(string="CI")
     nombres = fields.Char(string="Nombres", required=True)
+    fotografia = fields.Binary(string="Fotografia")
     ap_paterno = fields.Char(string="Apellido Paterno")
     ap_materno = fields.Char(string="Apellido Materno")
     fecha_nacimiento = fields.Date(string="Fecha de Nacimiento")
@@ -15,11 +16,12 @@ class alumno(models.Model):
             ("masculino","masculino"),
             ("femenino","femenino"),
         ],
-        string = "Alumno",
+        string = "Genero",
         default = "masculino",
         required = True,
      )
     #nota_id = fields.One2many("colegios.nota","alumno_id",string = "Notas")
+    profesor = fields.One2many("colegios.nota","profesor_id", string="Profesores")
     apoderado_nombre = fields.Char(string="Apoderado", related="parentesco_id.apoderado_id.nombre", readonly=True)
     parentesco_descripcion = fields.Text(string="Parentesco", compute="_compute_parentesco_descripcion")
     parentesco_id = fields.One2many("colegios.parentesco", "alumno_id", string="Parentescos")
@@ -36,6 +38,7 @@ class profesor(models.Model):
 
     ci = fields.Char(string="CI")
     nombre = fields.Char(string="Nombre", required=True)
+    fotografia = fields.Binary(string="Fotografia")
     ap_paterno = fields.Char(string="Apellido Paterno")
     ap_materno = fields.Char(string="Apellido Materno")
     direccion = fields.Char(string="Dirección")
@@ -44,7 +47,7 @@ class profesor(models.Model):
             ("masculino","masculino"),
             ("femenino","femenino"),
         ],
-        string = "Profesor",
+        string = "Genero",
         default = "masculino",
         required = True,
      )
@@ -52,6 +55,9 @@ class profesor(models.Model):
     rda = fields.Integer(string="RDA")
     telefono = fields.Char(string="Teléfono")
     correo = fields.Char(string="Correo")
+    alumno =fields.One2many("colegios.nota", "alumno_id", string="Alumnos")
+
+
 
 class apoderado(models.Model):
     _name = 'colegios.apoderado'
@@ -199,6 +205,7 @@ class nota(models.Model):
     gestion_id = fields.Many2one("colegios.gestion", string="Gestión", required=True)
     curso_id = fields.Many2one("colegios.curso", string="Curso", required=True)
     materia_id = fields.Many2one("colegios.materia", string="Materia", required=True)
+    profesor_id = fields.Many2one("colegios.profesor", string="Profesor", required=True)
     periodo_id = fields.Many2one("colegios.periodo", string="Periodo", required=True)
     promedio_periodo = fields.Integer(string="Promedio del Periodo")
     descripcion = fields.Char(string="Descripción", compute= "_compute_descripcion")
@@ -216,6 +223,7 @@ class nota(models.Model):
     gestion_name = fields.Char(string="Nombre de la Gestión", related="gestion_id.nombre", readonly=True)
     curso_name = fields.Char(string="Nombre del Curso", related="curso_id.nombre", readonly=True)
     materia_name = fields.Char(string="Nombre de la Materia", related="materia_id.nombre", readonly=True)
+    profesor_name = fields.Char(string="Nombre del profesor", related="profesor_id.nombre", readonly=True)
     periodo_name = fields.Char(string="Nombre del Periodo", related="periodo_id.descripcion", readonly=True)
    
     
