@@ -151,6 +151,7 @@
       </form>
     </field>
   </record>
+
         <!-- Acciones de ventana para colegios.alumno -->
     <record model="ir.actions.act_window" id="colegios.alumno_action_window">
       <field name="name">colegios alumno window</field>
