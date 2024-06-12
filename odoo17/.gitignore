@@ -14,3 +14,4 @@ nginx/nginx.conf
 filename.txt
 before*
 *.code-workspace
+odoo/
