@@ -14,8 +14,8 @@ class UnidadEducativa(models.Model):
 
     #Funcion para retornar el listado de unidades educativas
     def get_unidades_educativas(self):
-        unidades = self.search([('id', '=', 2)])
-        return unidades.read(['id', 'nombre', 'tipo'])
+        unidades = self.search([('id', '=', 2)]) #Ids que coinciden
+        return unidades.read(['id', 'nombre', 'tipo']) #campos de la tabla
 
 # class TipoGestion(models.Model):
 #     _name = 'colegio.tipo.gestion'
