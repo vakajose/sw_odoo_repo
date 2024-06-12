@@ -11,9 +11,8 @@
           <field name="ap_paterno"/>
           <field name="ap_materno"/>
           <field name="fecha_nacimiento"/>
-          <field name="genero"/>
-
-        </tree>
+          <field name="genero"/>        
+      </tree>
       </field>
     </record>
 
@@ -152,6 +151,62 @@
     </field>
   </record>
 
+  <record model="ir.ui.view" id="colegios.materia_list">
+      <field name="name">colegios materia list</field>
+      <field name="model">colegios.materia</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="distintivo"/>
+        </tree>
+      </field>
+    </record>
+
+  <record model="ir.ui.view" id="colegios.nota_list">
+      <field name="name">colegios nota list</field>
+      <field name="model">colegios.nota</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="alumno_name"/>
+          <field name="alumno_ap_pater"/>
+          <field name="gestion_name"/>
+          <field name="curso_name"/>
+          <field name="materia_name"/>
+          <field name="periodo_name"/>
+          <field name="promedio_periodo"/>
+          <field name="descripcion"/>
+        </tree>
+      </field>
+    </record>
+    
+  <record model="ir.ui.view" id="colegios.inscripcion_list">
+      <field name="name">colegios inscripcion list</field>
+      <field name="model">colegios.inscripcion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="fecha"/>
+          <field name="alumno_name"/>
+          <field name="secretaria_name"/>
+          <field name="matricula_monto"/>
+        </tree>
+      </field>
+    </record>
+
+  <record model="ir.ui.view" id="colegios.pagomensual_list">
+      <field name="name">colegios pagomensual list</field>
+      <field name="model">colegios.pagomensual</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="alumno_name"/>
+          <field name="gestion_name"/>
+          <field name="curso_name"/>
+          <field name="mes"/>
+          <field name="monto"/>
+          <field name="estado"/>
+        </tree>
+      </field>
+    </record>
+
         <!-- Acciones de ventana para colegios.alumno -->
     <record model="ir.actions.act_window" id="colegios.alumno_action_window">
       <field name="name">colegios alumno window</field>
@@ -179,30 +234,34 @@
       <field name="name">colegios parentesco window</field>
       <field name="res_model">colegios.parentesco</field>
       <field name="view_mode">tree,form</field>
-  </record>
-
-  <record model="ir.ui.view" id="colegios.nota_list">
-      <field name="name">colegios nota list</field>
-      <field name="model">colegios.nota</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="alumno_id"/>
-          <field name="gestion_id"/>
-          <field name="curso_id"/>
-          <field name="materia_id"/>
-          <field name="periodo_id"/>
-          <field name="promedio_periodo"/>
-          <field name="descripcion"/>
-
-        </tree>
-      </field>
-    </record
-
-
+    </record>
+      <record model="ir.actions.act_window" id="colegios.nota_action_window">
+      <field name="name">colegios nota window</field>
+      <field name="res_model">colegios.nota</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.materia_action_window">
+      <field name="name">colegios materia window</field>
+      <field name="res_model">colegios.materia</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.inscripcion_action_window">
+      <field name="name">colegios inscripcion window</field>
+      <field name="res_model">colegios.inscripcion</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.pagomensual_action_window">
+      <field name="name">colegios pagomensual window</field>
+      <field name="res_model">colegios.pagomensual</field>
+      <field name="view_mode">tree,form</field>
+    </record>
     <!-- Menú -->
     <menuitem name="colegios" id="colegios.menu_root"/>
 
     <menuitem name="Administración" id="colegios.alumno_menu_1" parent="colegios.menu_root"/>
+    <menuitem name="Boletines" id="colegios.nota_menu_2" parent="colegios.menu_root"/>
+    <menuitem name="Inscripciones" id="colegios.inscripcion_menu_3" parent="colegios.menu_root"/>
+
 
     <menuitem name="Alumnos" id="colegios.alumno_menu_1_list" parent="colegios.alumno_menu_1"
               action="colegios.alumno_action_window"/>
@@ -217,6 +276,18 @@
                   action="colegios.gestion_action_window"/>
     
     <menuitem name="Parentesco" id="colegios.parentesco_menu_1_list" parent="colegios.alumno_menu_1"
-                  action="colegios.parentesco_action_window"/>              
+                  action="colegios.parentesco_action_window"/>
+
+    <menuitem name="Materias" id="colegios.materia_menu_1_list" parent="colegios.alumno_menu_1"
+                  action="colegios.materia_action_window"/>              
+
+    <menuitem name="Notas" id="colegios.nota_menu_2_list" parent="colegios.nota_menu_2"
+                  action="colegios.nota_action_window"/>  
+
+    <menuitem name="Pagos mensuales" id="colegios.pagomensual_menu_3_list" parent="colegios.inscripcion_menu_3"
+                  action="colegios.pagomensual_action_window"/>
+
+    <menuitem name="Inscripcion del Alumno" id="colegios.inscripcion_menu_3_list" parent="colegios.inscripcion_menu_3"
+                  action="colegios.inscripcion_action_window"/>
   </data>
 </odoo>
