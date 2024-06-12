@@ -1,4 +1,4 @@
 FROM odoo:17.0
 
-LABEL MAINTAINER Daniel Moreno <hola@bigodoo.com>
+LABEL MAINTAINER Jose Vaca <vakajose@gmail.com>
 USER root
