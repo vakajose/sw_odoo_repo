@@ -33,3 +33,7 @@ services:
 volumes:
   odoo-db-data:
   odoo-web-data:
+
+networks:
+  mynetwork:
+    driver: bridge
