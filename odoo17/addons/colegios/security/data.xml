@@ -1,0 +1,2627 @@
+<odoo>
+    <data noupdate="1">
+        
+        <record id="alumno_5" model="colegios.alumno">
+            <field name="ci">987654</field>
+            <field name="nombres">Pedro</field>
+            <field name="ap_paterno">Ramírez</field>
+            <field name="ap_materno">Sánchez</field>
+            <field name="fecha_nacimiento">1999-03-25</field>
+            <field name="genero">masculino</field>
+        </record>
+	        
+        <record id="alumno_6" model="colegios.alumno">
+            <field name="ci">456789</field>
+            <field name="nombres">Laura</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Fernández</field>
+            <field name="fecha_nacimiento">2002-08-17</field>
+            <field name="genero">femenino</field>
+        </record>
+        
+        <record id="alumno_7" model="colegios.alumno">
+            <field name="ci">789123</field>
+            <field name="nombres">Carlos</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2003-11-29</field>
+            <field name="genero">masculino</field>
+        </record>
+        
+        <record id="alumno_8" model="colegios.alumno">
+            <field name="ci">321654</field>
+            <field name="nombres">Sofía</field>
+            <field name="ap_paterno">Díaz</field>
+            <field name="ap_materno">López</field>
+            <field name="fecha_nacimiento">2001-04-05</field>
+            <field name="genero">femenino</field>
+        </record>
+        
+        <record id="alumno_9" model="colegios.alumno">
+            <field name="ci">987654</field>
+            <field name="nombres">Diego</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2002-10-11</field>
+            <field name="genero">masculino</field>
+        </record>
+        
+        <record id="alumno_10" model="colegios.alumno">
+            <field name="ci">654321</field>
+            <field name="nombres">Valentina</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">González</field>
+            <field name="fecha_nacimiento">2004-06-22</field>
+            <field name="genero">femenino</field>
+        </record>
+        
+        <record id="alumno_11" model="colegios.alumno">
+            <field name="ci">987321</field>
+            <field name="nombres">Javier</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">García</field>
+            <field name="fecha_nacimiento">2003-09-07</field>
+            <field name="genero">masculino</field>
+        </record>
+        
+        <record id="alumno_12" model="colegios.alumno">
+            <field name="ci">456123</field>
+            <field name="nombres">Lucía</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="fecha_nacimiento">2001-02-14</field>
+            <field name="genero">femenino</field>
+        </record>
+        
+        <record id="alumno_13" model="colegios.alumno">
+            <field name="ci">321789</field>
+            <field name="nombres">Juan</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Sánchez</field>
+            <field name="fecha_nacimiento">2003-07-03</field>
+            <field name="genero">masculino</field>
+        </record>
+        
+        <record id="alumno_14" model="colegios.alumno">
+            <field name="ci">654987</field>
+            <field name="nombres">Fernanda</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="fecha_nacimiento">2002-12-19</field>
+            <field name="genero">femenino</field>
+        </record>
+        
+        <record id="alumno_15" model="colegios.alumno">
+            <field name="ci">123789</field>
+            <field name="nombres">Alejandro</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">González</field>
+            <field name="fecha_nacimiento">2004-04-27</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_16" model="colegios.alumno">
+            <field name="ci">789456</field>
+            <field name="nombres">Isabella</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2002-01-10</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_17" model="colegios.alumno">
+            <field name="ci">987456</field>
+            <field name="nombres">Martín</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">García</field>
+            <field name="fecha_nacimiento">2003-05-15</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_18" model="colegios.alumno">
+            <field name="ci">654789</field>
+            <field name="nombres">Valeria</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2001-09-20</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_19" model="colegios.alumno">
+            <field name="ci">789123</field>
+            <field name="nombres">Joaquín</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="fecha_nacimiento">2004-03-25</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_20" model="colegios.alumno">
+            <field name="ci">456789</field>
+            <field name="nombres">Lucas</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Sánchez</field>
+            <field name="fecha_nacimiento">2002-06-30</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_21" model="colegios.alumno">
+            <field name="ci">987123</field>
+            <field name="nombres">Camila</field>
+            <field name="ap_paterno">García</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="fecha_nacimiento">2003-11-05</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_22" model="colegios.alumno">
+            <field name="ci">123789</field>
+            <field name="nombres">Diego</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2001-04-10</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_23" model="colegios.alumno">
+            <field name="ci">654321</field>
+            <field name="nombres">Victoria</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Fernández</field>
+            <field name="fecha_nacimiento">2000-08-15</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_24" model="colegios.alumno">
+            <field name="ci">987654</field>
+            <field name="nombres">Daniel</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">García</field>
+            <field name="fecha_nacimiento">2003-02-20</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_25" model="colegios.alumno">
+            <field name="ci">321789</field>
+            <field name="nombres">Lucía</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">López</field>
+            <field name="fecha_nacimiento">2002-10-25</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_26" model="colegios.alumno">
+            <field name="ci">123456</field>
+            <field name="nombres">Matías</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2004-05-30</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_27" model="colegios.alumno">
+            <field name="ci">789012</field>
+            <field name="nombres">Catalina</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2001-09-03</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_28" model="colegios.alumno">
+            <field name="ci">987321</field>
+            <field name="nombres">Juan</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2003-12-18</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_29" model="colegios.alumno">
+            <field name="ci">456123</field>
+            <field name="nombres">Ana</field>
+            <field name="ap_paterno">García</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="fecha_nacimiento">2002-03-24</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_30" model="colegios.alumno">
+            <field name="ci">789654</field>
+            <field name="nombres">Emilio</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="fecha_nacimiento">2001-07-28</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_31" model="colegios.alumno">
+            <field name="ci">654789</field>
+            <field name="nombres">Valentina</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2003-02-10</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_32" model="colegios.alumno">
+            <field name="ci">321456</field>
+            <field name="nombres">Gabriel</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">García</field>
+            <field name="fecha_nacimiento">2000-05-15</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_33" model="colegios.alumno">
+            <field name="ci">987654</field>
+            <field name="nombres">Lucía</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2001-11-20</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_34" model="colegios.alumno">
+            <field name="ci">789321</field>
+            <field name="nombres">Samuel</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">López</field>
+            <field name="fecha_nacimiento">2002-08-08</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_35" model="colegios.alumno">
+            <field name="ci">456321</field>
+            <field name="nombres">Mariana</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2003-01-05</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_36" model="colegios.alumno">
+            <field name="ci">123987</field>
+            <field name="nombres">Pedro</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="fecha_nacimiento">2004-10-30</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_37" model="colegios.alumno">
+            <field name="ci">987456</field>
+            <field name="nombres">María</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="fecha_nacimiento">2002-09-15</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_38" model="colegios.alumno">
+            <field name="ci">654789</field>
+            <field name="nombres">Juan</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="fecha_nacimiento">2001-04-25</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_39" model="colegios.alumno">
+            <field name="ci">321654</field>
+            <field name="nombres">Valentina</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2003-11-10</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_40" model="colegios.alumno">
+            <field name="ci">789321</field>
+            <field name="nombres">Carlos</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="fecha_nacimiento">2002-07-20</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_41" model="colegios.alumno">
+            <field name="ci">456321</field>
+            <field name="nombres">Mariano</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Sánchez</field>
+            <field name="fecha_nacimiento">2000-12-05</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_42" model="colegios.alumno">
+            <field name="ci">123987</field>
+            <field name="nombres">Luciana</field>
+            <field name="ap_paterno">García</field>
+            <field name="ap_materno">López</field>
+            <field name="fecha_nacimiento">2001-10-30</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_43" model="colegios.alumno">
+            <field name="ci">987456</field>
+            <field name="nombres">Luis</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="fecha_nacimiento">2003-05-15</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_44" model="colegios.alumno">
+            <field name="ci">654789</field>
+            <field name="nombres">Andrea</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="fecha_nacimiento">2002-02-10</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_45" model="colegios.alumno">
+            <field name="ci">321654</field>
+            <field name="nombres">Gustavo</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="fecha_nacimiento">2001-05-25</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_46" model="colegios.alumno">
+            <field name="ci">789321</field>
+            <field name="nombres">Florencia</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="fecha_nacimiento">2000-07-20</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_47" model="colegios.alumno">
+            <field name="ci">456321</field>
+            <field name="nombres">Lorenzo</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Sánchez</field>
+            <field name="fecha_nacimiento">2003-12-05</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_48" model="colegios.alumno">
+            <field name="ci">123987</field>
+            <field name="nombres">Carolina</field>
+            <field name="ap_paterno">García</field>
+            <field name="ap_materno">López</field>
+            <field name="fecha_nacimiento">2001-10-30</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <record id="alumno_49" model="colegios.alumno">
+            <field name="ci">987456</field>
+            <field name="nombres">Sebastián</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="fecha_nacimiento">2003-05-15</field>
+            <field name="genero">masculino</field>
+        </record>
+
+        <record id="alumno_50" model="colegios.alumno">
+            <field name="ci">654789</field>
+            <field name="nombres">Marina</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="fecha_nacimiento">2002-02-10</field>
+            <field name="genero">femenino</field>
+        </record>
+
+        <!-- profesor -->
+
+        <!-- Registro 1 -->
+        <record id="profesor_1" model="colegios.profesor">
+            <field name="ci">1234567</field>
+            <field name="nombre">Juan Pérez</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Principal 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1985-03-20</field>
+            <field name="rda">100</field>
+            <field name="telefono">1234567</field>
+            <field name="correo">juan@example.com</field>
+        </record>
+
+        <!-- Registro 2 -->
+        <record id="profesor_2" model="colegios.profesor">
+            <field name="ci">7890123</field>
+            <field name="nombre">Pedro López</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">García</field>
+            <field name="direccion">Calle Secundaria 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1978-08-15</field>
+            <field name="rda">95</field>
+            <field name="telefono">9876543</field>
+            <field name="correo">pedro@example.com</field>
+        </record>
+
+        <!-- Registro 3 -->
+        <record id="profesor_3" model="colegios.profesor">
+            <field name="ci">2345678</field>
+            <field name="nombre">María González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Avenida Principal 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1982-05-10</field>
+            <field name="rda">85</field>
+            <field name="telefono">8765432</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Más registros aleatorios -->
+        <!-- Se agregan más registros aleatorios para cumplir con el total de 50 -->
+
+        <!-- Registro 4 -->
+        <record id="profesor_4" model="colegios.profesor">
+            <field name="ci">3456789</field>
+            <field name="nombre">Ana Pérez</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">López</field>
+            <field name="direccion">Calle 456, Piso 3</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1980-09-25</field>
+            <field name="rda">90</field>
+            <field name="telefono">7654321</field>
+            <field name="correo">ana@example.com</field>
+        </record>
+
+        <!-- Registro 5 -->
+        <record id="profesor_5" model="colegios.profesor">
+            <field name="ci">4567890</field>
+            <field name="nombre">José Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Avenida Bolívar 789</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1975-12-12</field>
+            <field name="rda">80</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">jose@example.com</field>
+        </record>
+
+        <!-- Más registros aleatorios -->
+        <!-- Se agregan más registros aleatorios para cumplir con el total de 50 -->
+
+        <!-- Registro 6 -->
+        <record id="profesor_6" model="colegios.profesor">
+            <field name="ci">5678901</field>
+            <field name="nombre">Laura González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="direccion">Calle Libertad 321</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1976-06-30</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">laura@example.com</field>
+        </record>
+
+        <!-- Registro 7 -->
+        <record id="profesor_7" model="colegios.profesor">
+            <field name="ci">6789012</field>
+            <field name="nombre">Javier Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Avenida Independencia 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1973-03-15</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">javier@example.com</field>
+        </record>
+
+        <!-- Registro 8 -->
+        <record id="profesor_8" model="colegios.profesor">
+            <field name="ci">7890123</field>
+            <field name="nombre">Luisa Fernández</field>
+            <field name="ap_paterno">Fernández</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle España 123</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1983-08-22</field>
+            <field name="rda">90</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">luisa@example.com</field>
+        </record>
+
+        <!-- Registro 9 -->
+        <record id="profesor_9" model="colegios.profesor">
+            <field name="ci">8901234</field>
+            <field name="nombre">Ricardo Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Fernández</field>
+            <field name="direccion">Calle Italia 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1979-11-10</field>
+            <field name="rda">95</field>
+            <field name="telefono">2109876</field>
+            <field name="correo">ricardo@example.com</field>
+        </record>
+
+        <!-- Registro 10 -->
+        <record id="profesor_10" model="colegios.profesor">
+            <field name="ci">9012345</field>
+            <field name="nombre">Mónica Pérez</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Francia 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1981-04-18</field>
+            <field name="rda">85</field>
+            <field name="telefono">1098765</field>
+            <field name="correo">monica@example.com</field>
+        </record>
+
+        <!-- Registro 11 -->
+        <record id="profesor_11" model="colegios.profesor">
+            <field name="ci">1123456</field>
+            <field name="nombre">Carlos García</field>
+            <field name="ap_paterno">García</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Venezuela 789</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1977-07-25</field>
+            <field name="rda">90</field>
+            <field name="telefono">2109876</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 12 -->
+        <record id="profesor_12" model="colegios.profesor">
+            <field name="ci">2234567</field>
+            <field name="nombre">Luis Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">González</field>
+            <field name="direccion">Calle Ecuador 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1980-11-14</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">luis@example.com</field>
+        </record>
+
+        <!-- Registro 13 -->
+        <record id="profesor_13" model="colegios.profesor">
+            <field name="ci">3345678</field>
+            <field name="nombre">María Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle Brasil 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1983-05-22</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 14 -->
+        <record id="profesor_14" model="colegios.profesor">
+            <field name="ci">4456789</field>
+            <field name="nombre">Juan Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Colombia 789</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1974-12-18</field>
+            <field name="rda">80</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">juan@example.com</field>
+        </record>
+
+        <!-- Registro 15 -->
+        <record id="profesor_15" model="colegios.profesor">
+            <field name="ci">5567890</field>
+            <field name="nombre">Marta Pérez</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Argentina 123</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1978-08-25</field>
+            <field name="rda">95</field>
+            <field name="telefono">9876543</field>
+            <field name="correo">marta@example.com</field>
+        </record>
+
+        <!-- Registro 16 -->
+        <record id="profesor_16" model="colegios.profesor">
+            <field name="ci">6678901</field>
+            <field name="nombre">Pedro González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">López</field>
+            <field name="direccion">Calle Chile 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1976-03-30</field>
+            <field name="rda">85</field>
+            <field name="telefono">8765432</field>
+            <field name="correo">pedro@example.com</field>
+        </record>
+
+        <!-- Registro 17 -->
+        <record id="profesor_17" model="colegios.profesor">
+            <field name="ci">7789012</field>
+            <field name="nombre">Laura Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">García</field>
+            <field name="direccion">Calle Perú 321</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1979-10-15</field>
+            <field name="rda">90</field>
+            <field name="telefono">7654321</field>
+            <field name="correo">laura@example.com</field>
+        </record>
+
+        <!-- Registro 18 -->
+        <record id="profesor_18" model="colegios.profesor">
+            <field name="ci">8890123</field>
+            <field name="nombre">Ricardo Gómez</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Fernández</field>
+            <field name="direccion">Calle España 789</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1982-05-05</field>
+            <field name="rda">95</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">ricardo@example.com</field>
+        </record>
+
+        <!-- Registro 19 -->
+        <record id="profesor_19" model="colegios.profesor">
+            <field name="ci">9901234</field>
+            <field name="nombre">María López</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle México 123</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1977-01-20</field>
+            <field name="rda">85</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 20 -->
+        <record id="profesor_20" model="colegios.profesor">
+            <field name="ci">1123456</field>
+            <field name="nombre">Javier Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle Argentina 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1974-06-18</field>
+            <field name="rda">80</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">javier@example.com</field>
+        </record>
+
+        <!-- Registro 21 -->
+        <record id="profesor_21" model="colegios.profesor">
+            <field name="ci">2234567</field>
+            <field name="nombre">Ana Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle España 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1981-12-22</field>
+            <field name="rda">95</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">ana@example.com</field>
+        </record>
+
+        <!-- Registro 22 -->
+        <record id="profesor_22" model="colegios.profesor">
+            <field name="ci">3345678</field>
+            <field name="nombre">Carlos Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Colombia 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1979-08-17</field>
+            <field name="rda">85</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 23 -->
+        <record id="profesor_23" model="colegios.profesor">
+            <field name="ci">4456789</field>
+            <field name="nombre">Marta González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">López</field>
+            <field name="direccion">Calle Chile 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1975-03-11</field>
+            <field name="rda">90</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">marta@example.com</field>
+        </record>
+
+        <!-- Registro 24 -->
+        <record id="profesor_24" model="colegios.profesor">
+            <field name="ci">5567890</field>
+            <field name="nombre">Pedro Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Venezuela 789</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1980-10-09</field>
+            <field name="rda">95</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">pedro@example.com</field>
+        </record>
+
+        <!-- Registro 25 -->
+        <record id="profesor_25" model="colegios.profesor">
+            <field name="ci">6678901</field>
+            <field name="nombre">Laura Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Brasil 123</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1977-07-15</field>
+            <field name="rda">85</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">laura@example.com</field>
+        </record>
+
+        <!-- Registro 26 -->
+        <record id="profesor_26" model="colegios.profesor">
+            <field name="ci">7789012</field>
+            <field name="nombre">Ricardo González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="direccion">Calle Argentina 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1981-05-20</field>
+            <field name="rda">90</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">ricardo@example.com</field>
+        </record>
+
+        <!-- Registro 27 -->
+        <record id="profesor_27" model="colegios.profesor">
+            <field name="ci">8890123</field>
+            <field name="nombre">María Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle Chile 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1983-02-12</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 28 -->
+        <record id="profesor_28" model="colegios.profesor">
+            <field name="ci">9901234</field>
+            <field name="nombre">Carlos Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">García</field>
+            <field name="direccion">Calle Colombia 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1978-09-25</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 29 -->
+        <record id="profesor_29" model="colegios.profesor">
+            <field name="ci">1123456</field>
+            <field name="nombre">Marta Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Perú 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1975-06-18</field>
+            <field name="rda">90</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">marta@example.com</field>
+        </record>
+
+        <!-- Registro 30 -->
+        <record id="profesor_30" model="colegios.profesor">
+            <field name="ci">2234567</field>
+            <field name="nombre">Pedro Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle Venezuela 789</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1982-03-22</field>
+            <field name="rda">95</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">pedro@example.com</field>
+        </record>
+
+        <!-- Registro 31 -->
+        <record id="profesor_31" model="colegios.profesor">
+            <field name="ci">3345678</field>
+            <field name="nombre">Laura González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">López</field>
+            <field name="direccion">Calle Argentina 123</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1976-01-30</field>
+            <field name="rda">85</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">laura@example.com</field>
+        </record>
+
+        <!-- Registro 32 -->
+        <record id="profesor_32" model="colegios.profesor">
+            <field name="ci">4456789</field>
+            <field name="nombre">Ricardo Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Brasil 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1978-08-15</field>
+            <field name="rda">90</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">ricardo@example.com</field>
+        </record>
+
+        <!-- Registro 33 -->
+        <record id="profesor_33" model="colegios.profesor">
+            <field name="ci">5567890</field>
+            <field name="nombre">María Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Chile 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1983-05-22</field>
+            <field name="rda">95</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 34 -->
+        <record id="profesor_34" model="colegios.profesor">
+            <field name="ci">6678901</field>
+            <field name="nombre">Carlos González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Rodríguez</field>
+            <field name="direccion">Calle Argentina 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1977-11-17</field>
+            <field name="rda">85</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 35 -->
+        <record id="profesor_35" model="colegios.profesor">
+            <field name="ci">7789012</field>
+            <field name="nombre">Marta Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Brasil 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1979-10-25</field>
+            <field name="rda">90</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">marta@example.com</field>
+        </record>
+
+        <!-- Registro 36 -->
+        <record id="profesor_36" model="colegios.profesor">
+            <field name="ci">8890123</field>
+            <field name="nombre">Pedro Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Perú 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1981-07-20</field>
+            <field name="rda">95</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">pedro@example.com</field>
+        </record>
+
+        <!-- Registro 37 -->
+        <record id="profesor_37" model="colegios.profesor">
+            <field name="ci">9901234</field>
+            <field name="nombre">Laura Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Argentina 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1976-03-15</field>
+            <field name="rda">85</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">laura@example.com</field>
+        </record>
+
+        <!-- Registro 38 -->
+        <record id="profesor_38" model="colegios.profesor">
+            <field name="ci">1123456</field>
+            <field name="nombre">Ricardo Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Bolivia 456</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1980-11-10</field>
+            <field name="rda">90</field>
+            <field name="telefono">6543210</field>
+            <field name="correo">ricardo@example.com</field>
+        </record>
+
+        <!-- Registro 39 -->
+        <record id="profesor_39" model="colegios.profesor">
+            <field name="ci">2234567</field>
+            <field name="nombre">María Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Perú 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1977-12-22</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 40 -->
+        <record id="profesor_40" model="colegios.profesor">
+            <field name="ci">3345678</field>
+            <field name="nombre">Carlos Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle Argentina 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1978-10-09</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 41 -->
+        <record id="profesor_41" model="colegios.profesor">
+            <field name="ci">4456789</field>
+            <field name="nombre">Marta Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Bolivia 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1979-06-18</field>
+            <field name="rda">90</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">marta@example.com</field>
+        </record>
+
+        <!-- Registro 42 -->
+        <record id="profesor_42" model="colegios.profesor">
+            <field name="ci">5567890</field>
+            <field name="nombre">Carlos Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Perú 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1975-04-15</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 43 -->
+        <record id="profesor_43" model="colegios.profesor">
+            <field name="ci">6678901</field>
+            <field name="nombre">María González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Chile 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1979-11-25</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 44 -->
+        <record id="profesor_44" model="colegios.profesor">
+            <field name="ci">7789012</field>
+            <field name="nombre">Pedro Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Argentina 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1982-08-20</field>
+            <field name="rda">90</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">pedro@example.com</field>
+        </record>
+
+        <!-- Registro 45 -->
+        <record id="profesor_45" model="colegios.profesor">
+            <field name="ci">8890123</field>
+            <field name="nombre">Laura Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Perú 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1977-07-15</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">laura@example.com</field>
+        </record>
+
+        <!-- Registro 46 -->
+        <record id="profesor_46" model="colegios.profesor">
+            <field name="ci">9901234</field>
+            <field name="nombre">Ricardo Sánchez</field>
+            <field name="ap_paterno">Sánchez</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="direccion">Calle Chile 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1978-11-10</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">ricardo@example.com</field>
+        </record>
+
+        <!-- Registro 47 -->
+        <record id="profesor_47" model="colegios.profesor">
+            <field name="ci">1123456</field>
+            <field name="nombre">María López</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Argentina 789</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1979-12-22</field>
+            <field name="rda">90</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">maria@example.com</field>
+        </record>
+
+        <!-- Registro 48 -->
+        <record id="profesor_48" model="colegios.profesor">
+            <field name="ci">2234567</field>
+            <field name="nombre">Carlos Rodríguez</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="direccion">Calle Chile 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1977-06-18</field>
+            <field name="rda">95</field>
+            <field name="telefono">5432109</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+        <!-- Registro 49 -->
+        <record id="profesor_49" model="colegios.profesor">
+            <field name="ci">3345678</field>
+            <field name="nombre">Marta Martínez</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="direccion">Calle Argentina 456</field>
+            <field name="genero">femenino</field>
+            <field name="fecha_nacimiento">1981-03-30</field>
+            <field name="rda">85</field>
+            <field name="telefono">4321098</field>
+            <field name="correo">marta@example.com</field>
+        </record>
+
+        <!-- Registro 50 -->
+        <record id="profesor_50" model="colegios.profesor">
+            <field name="ci">5567890</field>
+            <field name="nombre">Carlos González</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="direccion">Calle Bolivia 123</field>
+            <field name="genero">masculino</field>
+            <field name="fecha_nacimiento">1975-10-15</field>
+            <field name="rda">95</field>
+            <field name="telefono">3210987</field>
+            <field name="correo">carlos@example.com</field>
+        </record>
+
+
+
+        <!-- apoderado -->
+
+        <!-- Registro 1 -->
+        <record id="apoderado_1" model="colegios.apoderado">
+            <field name="ci">1234567</field>
+            <field name="nombre">María</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Pérez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Abogada</field>
+            <field name="grado_instruccion">Licenciada en Derecho</field>
+            <field name="fecha_nacimiento">1980-03-15</field>
+            <field name="telefono">7654321</field>
+        </record>
+
+        <!-- Registro 2 -->
+        <record id="apoderado_2" model="colegios.apoderado">
+            <field name="ci">2345678</field>
+            <field name="nombre">Juan</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Civil</field>
+            <field name="fecha_nacimiento">1975-06-20</field>
+            <field name="telefono">8765432</field>
+        </record>
+
+        <!-- Registro 3 -->
+        <record id="apoderado_3" model="colegios.apoderado">
+            <field name="ci">3456789</field>
+            <field name="nombre">Ana</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">García</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Doctora</field>
+            <field name="grado_instruccion">Médico Cirujano</field>
+            <field name="fecha_nacimiento">1982-10-05</field>
+            <field name="telefono">9876543</field>
+        </record>
+
+        <!-- Registro 4 -->
+        <record id="apoderado_4" model="colegios.apoderado">
+            <field name="ci">4567890</field>
+            <field name="nombre">Pedro</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Contador</field>
+            <field name="grado_instruccion">Contador Público</field>
+            <field name="fecha_nacimiento">1978-08-12</field>
+            <field name="telefono">2345678</field>
+        </record>
+
+        <!-- Registro 5 -->
+        <record id="apoderado_5" model="colegios.apoderado">
+            <field name="ci">5678901</field>
+            <field name="nombre">Sofía</field>
+            <field name="ap_paterno">Rodríguez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Ingeniera</field>
+            <field name="grado_instruccion">Ingeniera de Sistemas</field>
+            <field name="fecha_nacimiento">1985-04-30</field>
+            <field name="telefono">3456789</field>
+        </record>
+
+        <!-- Registro 6 -->
+        <record id="apoderado_6" model="colegios.apoderado">
+            <field name="ci">6789012</field>
+            <field name="nombre">José</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Profesor</field>
+            <field name="grado_instruccion">Licenciado en Educación</field>
+            <field name="fecha_nacimiento">1983-11-25</field>
+            <field name="telefono">4567890</field>
+        </record>
+
+        <!-- Registro 7 -->
+        <record id="apoderado_7" model="colegios.apoderado">
+            <field name="ci">7890123</field>
+            <field name="nombre">Laura</field>
+            <field name="ap_paterno">Pérez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Enfermera</field>
+            <field name="grado_instruccion">Técnica en Enfermería</field>
+            <field name="fecha_nacimiento">1988-07-18</field>
+            <field name="telefono">5678901</field>
+        </record>
+
+        <!-- Registro 8 -->
+        <record id="apoderado_8" model="colegios.apoderado">
+            <field name="ci">8901234</field>
+            <field name="nombre">David</field>
+            <field name="ap_paterno">García</field>
+            <field name="ap_materno">Hernández</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Industrial</field>
+            <field name="fecha_nacimiento">1976-12-10</field>
+            <field name="telefono">6789012</field>
+        </record>
+
+        <!-- Registro 9 -->
+        <record id="apoderado_9" model="colegios.apoderado">
+            <field name="ci">9012345</field>
+            <field name="nombre">Marcela</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1984-05-28</field>
+            <field name="telefono">7890123</field>
+        </record>
+
+        <!-- Registro 10 -->
+        <record id="apoderado_10" model="colegios.apoderado">
+            <field name="ci">0123456</field>
+            <field name="nombre">Carlos</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1977-09-08</field>
+            <field name="telefono">8901234</field>
+        </record>
+
+<!-- Registro 11 -->
+        <record id="apoderado_11" model="colegios.apoderado">
+            <field name="ci">1234567</field>
+            <field name="nombre">Ana</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Docente</field>
+            <field name="grado_instruccion">Licenciada en Educación</field>
+            <field name="fecha_nacimiento">1983-07-12</field>
+            <field name="telefono">7654321</field>
+        </record>
+
+        <!-- Registro 12 -->
+        <record id="apoderado_12" model="colegios.apoderado">
+            <field name="ci">2345678</field>
+            <field name="nombre">Pedro</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Civil</field>
+            <field name="fecha_nacimiento">1975-11-30</field>
+            <field name="telefono">8765432</field>
+        </record>
+
+        <!-- Registro 13 -->
+        <record id="apoderado_13" model="colegios.apoderado">
+            <field name="ci">3456789</field>
+            <field name="nombre">María</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1982-04-15</field>
+            <field name="telefono">9876543</field>
+        </record>
+
+        <!-- Registro 14 -->
+        <record id="apoderado_14" model="colegios.apoderado">
+            <field name="ci">4567890</field>
+            <field name="nombre">Juan</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1978-09-20</field>
+            <field name="telefono">2345678</field>
+        </record>
+
+        <!-- Registro 15 -->
+        <record id="apoderado_15" model="colegios.apoderado">
+            <field name="ci">5678901</field>
+            <field name="nombre">Sofía</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Ingeniera</field>
+            <field name="grado_instruccion">Ingeniera de Sistemas</field>
+            <field name="fecha_nacimiento">1985-12-05</field>
+            <field name="telefono">3456789</field>
+        </record>
+
+        <!-- Registro 16 -->
+        <record id="apoderado_16" model="colegios.apoderado">
+            <field name="ci">6789012</field>
+            <field name="nombre">Carlos</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Profesor</field>
+            <field name="grado_instruccion">Licenciado en Educación</field>
+            <field name="fecha_nacimiento">1983-02-18</field>
+            <field name="telefono">4567890</field>
+        </record>
+
+        <!-- Registro 17 -->
+        <record id="apoderado_17" model="colegios.apoderado">
+            <field name="ci">7890123</field>
+            <field name="nombre">Laura</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">García</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Enfermera</field>
+            <field name="grado_instruccion">Técnica en Enfermería</field>
+            <field name="fecha_nacimiento">1988-03-25</field>
+            <field name="telefono">5678901</field>
+        </record>
+
+        <!-- Registro 18 -->
+        <record id="apoderado_18" model="colegios.apoderado">
+            <field name="ci">8901234</field>
+            <field name="nombre">David</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Industrial</field>
+            <field name="fecha_nacimiento">1976-05-10</field>
+            <field name="telefono">6789012</field>
+        </record>
+
+        <!-- Registro 19 -->
+        <record id="apoderado_19" model="colegios.apoderado">
+            <field name="ci">9012345</field>
+            <field name="nombre">Marcela</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1984-08-30</field>
+            <field name="telefono">7890123</field>
+        </record>
+
+        <!-- Registro 20 -->
+        <record id="apoderado_20" model="colegios.apoderado">
+            <field name="ci">0123456</field>
+            <field name="nombre">Javier</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1977-01-22</field>
+            <field name="telefono">8901234</field>
+        </record>
+        <!-- Registro 21 -->
+        <record id="apoderado_21" model="colegios.apoderado">
+            <field name="ci">1234567</field>
+            <field name="nombre">Ana</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Docente</field>
+            <field name="grado_instruccion">Licenciada en Educación</field>
+            <field name="fecha_nacimiento">1983-07-12</field>
+            <field name="telefono">7654321</field>
+        </record>
+
+        <!-- Registro 22 -->
+        <record id="apoderado_22" model="colegios.apoderado">
+            <field name="ci">2345678</field>
+            <field name="nombre">Pedro</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Civil</field>
+            <field name="fecha_nacimiento">1975-11-30</field>
+            <field name="telefono">8765432</field>
+        </record>
+
+        <!-- Registro 23 -->
+        <record id="apoderado_23" model="colegios.apoderado">
+            <field name="ci">3456789</field>
+            <field name="nombre">María</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1982-04-15</field>
+            <field name="telefono">9876543</field>
+        </record>
+
+        <!-- Registro 24 -->
+        <record id="apoderado_24" model="colegios.apoderado">
+            <field name="ci">4567890</field>
+            <field name="nombre">Juan</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1978-09-20</field>
+            <field name="telefono">2345678</field>
+        </record>
+
+        <!-- Registro 25 -->
+        <record id="apoderado_25" model="colegios.apoderado">
+            <field name="ci">5678901</field>
+            <field name="nombre">Sofía</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Ingeniera</field>
+            <field name="grado_instruccion">Ingeniera de Sistemas</field>
+            <field name="fecha_nacimiento">1985-12-05</field>
+            <field name="telefono">3456789</field>
+        </record>
+
+        <!-- Registro 26 -->
+        <record id="apoderado_26" model="colegios.apoderado">
+            <field name="ci">6789012</field>
+            <field name="nombre">Carlos</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Profesor</field>
+            <field name="grado_instruccion">Licenciado en Educación</field>
+            <field name="fecha_nacimiento">1983-02-18</field>
+            <field name="telefono">4567890</field>
+        </record>
+
+        <!-- Registro 27 -->
+        <record id="apoderado_27" model="colegios.apoderado">
+            <field name="ci">7890123</field>
+            <field name="nombre">Laura</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">García</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Enfermera</field>
+            <field name="grado_instruccion">Técnica en Enfermería</field>
+            <field name="fecha_nacimiento">1988-03-25</field>
+            <field name="telefono">5678901</field>
+        </record>
+
+        <!-- Registro 28 -->
+        <record id="apoderado_28" model="colegios.apoderado">
+            <field name="ci">8901234</field>
+            <field name="nombre">David</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Industrial</field>
+            <field name="fecha_nacimiento">1976-05-10</field>
+            <field name="telefono">6789012</field>
+        </record>
+
+        <!-- Registro 29 -->
+        <record id="apoderado_29" model="colegios.apoderado">
+            <field name="ci">9012345</field>
+            <field name="nombre">Marcela</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1984-08-30</field>
+            <field name="telefono">7890123</field>
+        </record>
+
+        <!-- Registro 30 -->
+        <record id="apoderado_30" model="colegios.apoderado">
+            <field name="ci">0123456</field>
+            <field name="nombre">Javier</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1977-01-22</field>
+            <field name="telefono">8901234</field>
+        </record>
+       <!-- Registro 31 -->
+        <record id="apoderado_31" model="colegios.apoderado">
+            <field name="ci">1234567</field>
+            <field name="nombre">Ana</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Docente</field>
+            <field name="grado_instruccion">Licenciada en Educación</field>
+            <field name="fecha_nacimiento">1983-07-12</field>
+            <field name="telefono">7654321</field>
+        </record>
+
+        <!-- Registro 32 -->
+        <record id="apoderado_32" model="colegios.apoderado">
+            <field name="ci">2345678</field>
+            <field name="nombre">Pedro</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Civil</field>
+            <field name="fecha_nacimiento">1975-11-30</field>
+            <field name="telefono">8765432</field>
+        </record>
+
+        <!-- Registro 33 -->
+        <record id="apoderado_33" model="colegios.apoderado">
+            <field name="ci">3456789</field>
+            <field name="nombre">María</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1982-04-15</field>
+            <field name="telefono">9876543</field>
+        </record>
+
+        <!-- Registro 34 -->
+        <record id="apoderado_34" model="colegios.apoderado">
+            <field name="ci">4567890</field>
+            <field name="nombre">Juan</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1978-09-20</field>
+            <field name="telefono">2345678</field>
+        </record>
+
+        <!-- Registro 35 -->
+        <record id="apoderado_35" model="colegios.apoderado">
+            <field name="ci">5678901</field>
+            <field name="nombre">Sofía</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Ingeniera</field>
+            <field name="grado_instruccion">Ingeniera de Sistemas</field>
+            <field name="fecha_nacimiento">1985-12-05</field>
+            <field name="telefono">3456789</field>
+        </record>
+
+        <!-- Registro 36 -->
+        <record id="apoderado_36" model="colegios.apoderado">
+            <field name="ci">6789012</field>
+            <field name="nombre">Carlos</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Profesor</field>
+            <field name="grado_instruccion">Licenciado en Educación</field>
+            <field name="fecha_nacimiento">1983-02-18</field>
+            <field name="telefono">4567890</field>
+        </record>
+
+        <!-- Registro 37 -->
+        <record id="apoderado_37" model="colegios.apoderado">
+            <field name="ci">7890123</field>
+            <field name="nombre">Laura</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">García</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Enfermera</field>
+            <field name="grado_instruccion">Técnica en Enfermería</field>
+            <field name="fecha_nacimiento">1988-03-25</field>
+            <field name="telefono">5678901</field>
+        </record>
+
+        <!-- Registro 38 -->
+        <record id="apoderado_38" model="colegios.apoderado">
+            <field name="ci">8901234</field>
+            <field name="nombre">David</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Industrial</field>
+            <field name="fecha_nacimiento">1976-05-10</field>
+            <field name="telefono">6789012</field>
+        </record>
+
+        <!-- Registro 39 -->
+        <record id="apoderado_39" model="colegios.apoderado">
+            <field name="ci">9012345</field>
+            <field name="nombre">Marcela</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1984-08-30</field>
+            <field name="telefono">7890123</field>
+        </record>
+
+        <!-- Registro 40 -->
+        <record id="apoderado_40" model="colegios.apoderado">
+            <field name="ci">0123456</field>
+            <field name="nombre">Javier</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1977-01-22</field>
+            <field name="telefono">8901234</field>
+        </record>
+        <!-- Registro 41 -->
+        <record id="apoderado_41" model="colegios.apoderado">
+            <field name="ci">1234567</field>
+            <field name="nombre">Ana</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Docente</field>
+            <field name="grado_instruccion">Licenciada en Educación</field>
+            <field name="fecha_nacimiento">1983-07-12</field>
+            <field name="telefono">7654321</field>
+        </record>
+
+        <!-- Registro 42 -->
+        <record id="apoderado_42" model="colegios.apoderado">
+            <field name="ci">2345678</field>
+            <field name="nombre">Pedro</field>
+            <field name="ap_paterno">González</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Civil</field>
+            <field name="fecha_nacimiento">1975-11-30</field>
+            <field name="telefono">8765432</field>
+        </record>
+
+        <!-- Registro 43 -->
+        <record id="apoderado_43" model="colegios.apoderado">
+            <field name="ci">3456789</field>
+            <field name="nombre">María</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1982-04-15</field>
+            <field name="telefono">9876543</field>
+        </record>
+
+        <!-- Registro 44 -->
+        <record id="apoderado_44" model="colegios.apoderado">
+            <field name="ci">4567890</field>
+            <field name="nombre">Juan</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">Martínez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1978-09-20</field>
+            <field name="telefono">2345678</field>
+        </record>
+
+        <!-- Registro 45 -->
+        <record id="apoderado_45" model="colegios.apoderado">
+            <field name="ci">5678901</field>
+            <field name="nombre">Sofía</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Ingeniera</field>
+            <field name="grado_instruccion">Ingeniera de Sistemas</field>
+            <field name="fecha_nacimiento">1985-12-05</field>
+            <field name="telefono">3456789</field>
+        </record>
+
+        <!-- Registro 46 -->
+        <record id="apoderado_46" model="colegios.apoderado">
+            <field name="ci">6789012</field>
+            <field name="nombre">Carlos</field>
+            <field name="ap_paterno">López</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Profesor</field>
+            <field name="grado_instruccion">Licenciado en Educación</field>
+            <field name="fecha_nacimiento">1983-02-18</field>
+            <field name="telefono">4567890</field>
+        </record>
+
+        <!-- Registro 47 -->
+        <record id="apoderado_47" model="colegios.apoderado">
+            <field name="ci">7890123</field>
+            <field name="nombre">Laura</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">García</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Enfermera</field>
+            <field name="grado_instruccion">Técnica en Enfermería</field>
+            <field name="fecha_nacimiento">1988-03-25</field>
+            <field name="telefono">5678901</field>
+        </record>
+
+        <!-- Registro 48 -->
+        <record id="apoderado_48" model="colegios.apoderado">
+            <field name="ci">8901234</field>
+            <field name="nombre">David</field>
+            <field name="ap_paterno">Hernández</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Ingeniero</field>
+            <field name="grado_instruccion">Ingeniero Industrial</field>
+            <field name="fecha_nacimiento">1976-05-10</field>
+            <field name="telefono">6789012</field>
+        </record>
+
+        <!-- Registro 49 -->
+        <record id="apoderado_49" model="colegios.apoderado">
+            <field name="ci">9012345</field>
+            <field name="nombre">Marcela</field>
+            <field name="ap_paterno">Gómez</field>
+            <field name="ap_materno">López</field>
+            <field name="genero">femenino</field>
+            <field name="ocupacion">Contadora</field>
+            <field name="grado_instruccion">Contadora Pública</field>
+            <field name="fecha_nacimiento">1984-08-30</field>
+            <field name="telefono">7890123</field>
+        </record>
+
+        <!-- Registro 50 -->
+        <record id="apoderado_50" model="colegios.apoderado">
+            <field name="ci">0123456</field>
+            <field name="nombre">Javier</field>
+            <field name="ap_paterno">Martínez</field>
+            <field name="ap_materno">Gómez</field>
+            <field name="genero">masculino</field>
+            <field name="ocupacion">Abogado</field>
+            <field name="grado_instruccion">Licenciado en Derecho</field>
+            <field name="fecha_nacimiento">1977-01-22</field>
+            <field name="telefono">8901234</field>
+        </record>
+
+        <!-- parentesco -->
+	<!-- Registro 3 -->
+        <!-- Registro 5 -->
+        <record id="parentesco_5" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_5"/>
+            <field name="apoderado_id" ref="apoderado_5"/>
+            <field name="descripcion">hermano</field>
+        </record>
+
+        <!-- Registro 6 -->
+        <record id="parentesco_6" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_6"/>
+            <field name="apoderado_id" ref="apoderado_6"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 7 -->
+        <record id="parentesco_7" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_7"/>
+            <field name="apoderado_id" ref="apoderado_7"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 8 -->
+        <record id="parentesco_8" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_8"/>
+            <field name="apoderado_id" ref="apoderado_8"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 9 -->
+        <record id="parentesco_9" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_9"/>
+            <field name="apoderado_id" ref="apoderado_9"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 10 -->
+        <record id="parentesco_10" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_10"/>
+            <field name="apoderado_id" ref="apoderado_10"/>
+            <field name="descripcion">hermano</field>
+        </record>
+        <!-- Registro 11 -->
+        <record id="parentesco_11" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_11"/>
+            <field name="apoderado_id" ref="apoderado_11"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 12 -->
+        <record id="parentesco_12" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_12"/>
+            <field name="apoderado_id" ref="apoderado_12"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 13 -->
+        <record id="parentesco_13" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_13"/>
+            <field name="apoderado_id" ref="apoderado_13"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 14 -->
+        <record id="parentesco_14" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_14"/>
+            <field name="apoderado_id" ref="apoderado_14"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 15 -->
+        <record id="parentesco_15" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_15"/>
+            <field name="apoderado_id" ref="apoderado_15"/>
+            <field name="descripcion">hermano</field>
+        </record>
+
+        <!-- Registro 16 -->
+        <record id="parentesco_16" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_16"/>
+            <field name="apoderado_id" ref="apoderado_16"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 17 -->
+        <record id="parentesco_17" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_17"/>
+            <field name="apoderado_id" ref="apoderado_17"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 18 -->
+        <record id="parentesco_18" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_18"/>
+            <field name="apoderado_id" ref="apoderado_18"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 19 -->
+        <record id="parentesco_19" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_19"/>
+            <field name="apoderado_id" ref="apoderado_19"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 20 -->
+        <record id="parentesco_20" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_20"/>
+            <field name="apoderado_id" ref="apoderado_20"/>
+            <field name="descripcion">hermano</field>
+        </record>
+        <!-- Registro 21 -->
+        <record id="parentesco_21" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_21"/>
+            <field name="apoderado_id" ref="apoderado_21"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 22 -->
+        <record id="parentesco_22" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_22"/>
+            <field name="apoderado_id" ref="apoderado_22"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 23 -->
+        <record id="parentesco_23" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_23"/>
+            <field name="apoderado_id" ref="apoderado_23"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 24 -->
+        <record id="parentesco_24" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_24"/>
+            <field name="apoderado_id" ref="apoderado_24"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 25 -->
+        <record id="parentesco_25" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_25"/>
+            <field name="apoderado_id" ref="apoderado_25"/>
+            <field name="descripcion">hermano</field>
+        </record>
+
+        <!-- Registro 26 -->
+        <record id="parentesco_26" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_26"/>
+            <field name="apoderado_id" ref="apoderado_26"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 27 -->
+        <record id="parentesco_27" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_27"/>
+            <field name="apoderado_id" ref="apoderado_27"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 28 -->
+        <record id="parentesco_28" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_28"/>
+            <field name="apoderado_id" ref="apoderado_28"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 29 -->
+        <record id="parentesco_29" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_29"/>
+            <field name="apoderado_id" ref="apoderado_29"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 30 -->
+        <record id="parentesco_30" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_30"/>
+            <field name="apoderado_id" ref="apoderado_30"/>
+            <field name="descripcion">hermano</field>
+        </record>
+        <!-- Registro 31 -->
+        <record id="parentesco_31" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_31"/>
+            <field name="apoderado_id" ref="apoderado_31"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 32 -->
+        <record id="parentesco_32" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_32"/>
+            <field name="apoderado_id" ref="apoderado_32"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 33 -->
+        <record id="parentesco_33" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_33"/>
+            <field name="apoderado_id" ref="apoderado_33"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 34 -->
+        <record id="parentesco_34" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_34"/>
+            <field name="apoderado_id" ref="apoderado_34"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 35 -->
+        <record id="parentesco_35" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_35"/>
+            <field name="apoderado_id" ref="apoderado_35"/>
+            <field name="descripcion">hermano</field>
+        </record>
+
+        <!-- Registro 36 -->
+        <record id="parentesco_36" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_36"/>
+            <field name="apoderado_id" ref="apoderado_36"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 37 -->
+        <record id="parentesco_37" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_37"/>
+            <field name="apoderado_id" ref="apoderado_37"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 38 -->
+        <record id="parentesco_38" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_38"/>
+            <field name="apoderado_id" ref="apoderado_38"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 39 -->
+        <record id="parentesco_39" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_39"/>
+            <field name="apoderado_id" ref="apoderado_39"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 40 -->
+        <record id="parentesco_40" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_40"/>
+            <field name="apoderado_id" ref="apoderado_40"/>
+            <field name="descripcion">hermano</field>
+        </record>
+        <!-- Registro 41 -->
+        <record id="parentesco_41" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_41"/>
+            <field name="apoderado_id" ref="apoderado_41"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 42 -->
+        <record id="parentesco_42" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_42"/>
+            <field name="apoderado_id" ref="apoderado_42"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 43 -->
+        <record id="parentesco_43" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_43"/>
+            <field name="apoderado_id" ref="apoderado_43"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 44 -->
+        <record id="parentesco_44" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_44"/>
+            <field name="apoderado_id" ref="apoderado_44"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 45 -->
+        <record id="parentesco_45" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_45"/>
+            <field name="apoderado_id" ref="apoderado_45"/>
+            <field name="descripcion">hermano</field>
+        </record>
+
+        <!-- Registro 46 -->
+        <record id="parentesco_46" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_46"/>
+            <field name="apoderado_id" ref="apoderado_46"/>
+            <field name="descripcion">padre</field>
+        </record>
+
+        <!-- Registro 47 -->
+        <record id="parentesco_47" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_47"/>
+            <field name="apoderado_id" ref="apoderado_47"/>
+            <field name="descripcion">madre</field>
+        </record>
+
+        <!-- Registro 48 -->
+        <record id="parentesco_48" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_48"/>
+            <field name="apoderado_id" ref="apoderado_48"/>
+            <field name="descripcion">tio</field>
+        </record>
+
+        <!-- Registro 49 -->
+        <record id="parentesco_49" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_49"/>
+            <field name="apoderado_id" ref="apoderado_49"/>
+            <field name="descripcion">abuelo</field>
+        </record>
+
+        <!-- Registro 50 -->
+        <record id="parentesco_50" model="colegios.parentesco">
+            <field name="alumno_id" ref="alumno_50"/>
+            <field name="apoderado_id" ref="apoderado_50"/>
+            <field name="descripcion">hermano</field>
+        </record>
+
+	<!-- gestion -->
+
+        <!-- Gestión 2014 -->
+        <record id="gestion_2014" model="colegios.gestion">
+            <field name="nombre">Gestión 2014</field>
+            <field name="fecha_inicio">2014-01-01</field>
+            <field name="fecha_fin">2014-12-31</field>
+        </record>
+
+        <!-- Gestión 2015 -->
+        <record id="gestion_2015" model="colegios.gestion">
+            <field name="nombre">Gestión 2015</field>
+            <field name="fecha_inicio">2015-01-01</field>
+            <field name="fecha_fin">2015-12-31</field>
+        </record>
+
+        <!-- Gestión 2016 -->
+        <record id="gestion_2016" model="colegios.gestion">
+            <field name="nombre">Gestión 2016</field>
+            <field name="fecha_inicio">2016-01-01</field>
+            <field name="fecha_fin">2016-12-31</field>
+        </record>
+
+        <!-- Gestión 2017 -->
+        <record id="gestion_2017" model="colegios.gestion">
+            <field name="nombre">Gestión 2017</field>
+            <field name="fecha_inicio">2017-01-01</field>
+            <field name="fecha_fin">2017-12-31</field>
+        </record>
+
+        <!-- Gestión 2018 -->
+        <record id="gestion_2018" model="colegios.gestion">
+            <field name="nombre">Gestión 2018</field>
+            <field name="fecha_inicio">2018-01-01</field>
+            <field name="fecha_fin">2018-12-31</field>
+        </record>
+
+        <!-- Gestión 2019 -->
+        <record id="gestion_2019" model="colegios.gestion">
+            <field name="nombre">Gestión 2019</field>
+            <field name="fecha_inicio">2019-01-01</field>
+            <field name="fecha_fin">2019-12-31</field>
+        </record>
+
+        <!-- Gestión 2020 -->
+        <record id="gestion_2020" model="colegios.gestion">
+            <field name="nombre">Gestión 2020</field>
+            <field name="fecha_inicio">2020-01-01</field>
+            <field name="fecha_fin">2020-12-31</field>
+        </record>
+
+        <!-- Gestión 2021 -->
+        <record id="gestion_2021" model="colegios.gestion">
+            <field name="nombre">Gestión 2021</field>
+            <field name="fecha_inicio">2021-01-01</field>
+            <field name="fecha_fin">2021-12-31</field>
+        </record>
+
+        <!-- Gestión 2022 -->
+        <record id="gestion_2022" model="colegios.gestion">
+            <field name="nombre">Gestión 2022</field>
+            <field name="fecha_inicio">2022-01-01</field>
+            <field name="fecha_fin">2022-12-31</field>
+        </record>
+
+        <!-- Gestión 2023 -->
+        <record id="gestion_2023" model="colegios.gestion">
+            <field name="nombre">Gestión 2023</field>
+            <field name="fecha_inicio">2023-01-01</field>
+            <field name="fecha_fin">2023-12-31</field>
+        </record>
+        <!-- Gestión 2016 -->
+        <record id="gestion_2016_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2016 - Bimestre 1</field>
+            <field name="fecha_inicio">2016-01-01</field>
+            <field name="fecha_fin">2016-02-29</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2016_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2016 - Bimestre 2</field>
+            <field name="fecha_inicio">2016-03-01</field>
+            <field name="fecha_fin">2016-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2016_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2016 - Bimestre 3</field>
+            <field name="fecha_inicio">2016-05-01</field>
+            <field name="fecha_fin">2016-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2016_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2016 - Bimestre 4</field>
+            <field name="fecha_inicio">2016-07-01</field>
+            <field name="fecha_fin">2016-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2016_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2016 - Bimestre 5</field>
+            <field name="fecha_inicio">2016-09-01</field>
+            <field name="fecha_fin">2016-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2016_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2016 - Bimestre 6</field>
+            <field name="fecha_inicio">2016-11-01</field>
+            <field name="fecha_fin">2016-12-31</field>
+        </record>
+
+        <!-- Continuación de Gestión 2017 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2017_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2017 - Bimestre 1</field>
+            <field name="fecha_inicio">2017-01-01</field>
+            <field name="fecha_fin">2017-02-28</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2017_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2017 - Bimestre 2</field>
+            <field name="fecha_inicio">2017-03-01</field>
+            <field name="fecha_fin">2017-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2017_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2017 - Bimestre 3</field>
+            <field name="fecha_inicio">2017-05-01</field>
+            <field name="fecha_fin">2017-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2017_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2017 - Bimestre 4</field>
+            <field name="fecha_inicio">2017-07-01</field>
+            <field name="fecha_fin">2017-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2017_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2017 - Bimestre 5</field>
+            <field name="fecha_inicio">2017-09-01</field>
+            <field name="fecha_fin">2017-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2017_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2017 - Bimestre 6</field>
+            <field name="fecha_inicio">2017-11-01</field>
+            <field name="fecha_fin">2017-12-31</field>
+        </record>
+        <!-- Continuación de Gestión 2018 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2018_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2018 - Bimestre 1</field>
+            <field name="fecha_inicio">2018-01-01</field>
+            <field name="fecha_fin">2018-02-28</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2018_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2018 - Bimestre 2</field>
+            <field name="fecha_inicio">2018-03-01</field>
+            <field name="fecha_fin">2018-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2018_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2018 - Bimestre 3</field>
+            <field name="fecha_inicio">2018-05-01</field>
+            <field name="fecha_fin">2018-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2018_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2018 - Bimestre 4</field>
+            <field name="fecha_inicio">2018-07-01</field>
+            <field name="fecha_fin">2018-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2018_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2018 - Bimestre 5</field>
+            <field name="fecha_inicio">2018-09-01</field>
+            <field name="fecha_fin">2018-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2018_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2018 - Bimestre 6</field>
+            <field name="fecha_inicio">2018-11-01</field>
+            <field name="fecha_fin">2018-12-31</field>
+        </record>
+        <!-- Continuación de Gestión 2019 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2019_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2019 - Bimestre 1</field>
+            <field name="fecha_inicio">2019-01-01</field>
+            <field name="fecha_fin">2019-02-28</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2019_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2019 - Bimestre 2</field>
+            <field name="fecha_inicio">2019-03-01</field>
+            <field name="fecha_fin">2019-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2019_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2019 - Bimestre 3</field>
+            <field name="fecha_inicio">2019-05-01</field>
+            <field name="fecha_fin">2019-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2019_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2019 - Bimestre 4</field>
+            <field name="fecha_inicio">2019-07-01</field>
+            <field name="fecha_fin">2019-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2019_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2019 - Bimestre 5</field>
+            <field name="fecha_inicio">2019-09-01</field>
+            <field name="fecha_fin">2019-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2019_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2019 - Bimestre 6</field>
+            <field name="fecha_inicio">2019-11-01</field>
+            <field name="fecha_fin">2019-12-31</field>
+        </record>
+
+        <!-- Gestión 2020 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2020_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2020 - Bimestre 1</field>
+            <field name="fecha_inicio">2020-01-01</field>
+            <field name="fecha_fin">2020-02-29</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2020_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2020 - Bimestre 2</field>
+            <field name="fecha_inicio">2020-03-01</field>
+            <field name="fecha_fin">2020-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2020_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2020 - Bimestre 3</field>
+            <field name="fecha_inicio">2020-05-01</field>
+            <field name="fecha_fin">2020-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2020_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2020 - Bimestre 4</field>
+            <field name="fecha_inicio">2020-07-01</field>
+            <field name="fecha_fin">2020-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2020_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2020 - Bimestre 5</field>
+            <field name="fecha_inicio">2020-09-01</field>
+            <field name="fecha_fin">2020-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2020_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2020 - Bimestre 6</field>
+            <field name="fecha_inicio">2020-11-01</field>
+            <field name="fecha_fin">2020-12-31</field>
+        </record>
+
+        <!-- Continuación de Gestión 2021 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2021_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2021 - Bimestre 1</field>
+            <field name="fecha_inicio">2021-01-01</field>
+            <field name="fecha_fin">2021-02-28</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2021_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2021 - Bimestre 2</field>
+            <field name="fecha_inicio">2021-03-01</field>
+            <field name="fecha_fin">2021-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2021_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2021 - Bimestre 3</field>
+            <field name="fecha_inicio">2021-05-01</field>
+            <field name="fecha_fin">2021-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2021_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2021 - Bimestre 4</field>
+            <field name="fecha_inicio">2021-07-01</field>
+            <field name="fecha_fin">2021-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2021_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2021 - Bimestre 5</field>
+            <field name="fecha_inicio">2021-09-01</field>
+            <field name="fecha_fin">2021-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2021_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2021 - Bimestre 6</field>
+            <field name="fecha_inicio">2021-11-01</field>
+            <field name="fecha_fin">2021-12-31</field>
+        </record>
+
+        <!-- Continuación de Gestión 2022 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2022_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2022 - Bimestre 1</field>
+            <field name="fecha_inicio">2022-01-01</field>
+            <field name="fecha_fin">2022-02-28</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2022_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2022 - Bimestre 2</field>
+            <field name="fecha_inicio">2022-03-01</field>
+            <field name="fecha_fin">2022-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2022_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2022 - Bimestre 3</field>
+            <field name="fecha_inicio">2022-05-01</field>
+            <field name="fecha_fin">2022-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2022_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2022 - Bimestre 4</field>
+            <field name="fecha_inicio">2022-07-01</field>
+            <field name="fecha_fin">2022-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2022_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2022 - Bimestre 5</field>
+            <field name="fecha_inicio">2022-09-01</field>
+            <field name="fecha_fin">2022-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2022_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2022 - Bimestre 6</field>
+            <field name="fecha_inicio">2022-11-01</field>
+            <field name="fecha_fin">2022-12-31</field>
+        </record>
+
+
+        <!-- Continuación de Gestión 2023 -->
+        <!-- Bimestre 1 -->
+        <record id="gestion_2023_1" model="colegios.gestion">
+            <field name="nombre">Gestión 2023 - Bimestre 1</field>
+            <field name="fecha_inicio">2023-01-01</field>
+            <field name="fecha_fin">2023-02-28</field>
+        </record>
+        <!-- Bimestre 2 -->
+        <record id="gestion_2023_2" model="colegios.gestion">
+            <field name="nombre">Gestión 2023 - Bimestre 2</field>
+            <field name="fecha_inicio">2023-03-01</field>
+            <field name="fecha_fin">2023-04-30</field>
+        </record>
+        <!-- Bimestre 3 -->
+        <record id="gestion_2023_3" model="colegios.gestion">
+            <field name="nombre">Gestión 2023 - Bimestre 3</field>
+            <field name="fecha_inicio">2023-05-01</field>
+            <field name="fecha_fin">2023-06-30</field>
+        </record>
+        <!-- Bimestre 4 -->
+        <record id="gestion_2023_4" model="colegios.gestion">
+            <field name="nombre">Gestión 2023 - Bimestre 4</field>
+            <field name="fecha_inicio">2023-07-01</field>
+            <field name="fecha_fin">2023-08-31</field>
+        </record>
+        <!-- Bimestre 5 -->
+        <record id="gestion_2023_5" model="colegios.gestion">
+            <field name="nombre">Gestión 2023 - Bimestre 5</field>
+            <field name="fecha_inicio">2023-09-01</field>
+            <field name="fecha_fin">2023-10-31</field>
+        </record>
+        <!-- Bimestre 6 -->
+        <record id="gestion_2023_6" model="colegios.gestion">
+            <field name="nombre">Gestión 2023 - Bimestre 6</field>
+            <field name="fecha_inicio">2023-11-01</field>
+            <field name="fecha_fin">2023-12-31</field>
+        </record>
+
+        <!-- Cursos  -->
+
+        <!-- Cursos de Primaria -->
+        <record id="curso_primaria_1" model="colegios.curso">
+            <field name="nombre">1ro de Primaria</field>
+        </record>
+        <record id="curso_primaria_2" model="colegios.curso">
+            <field name="nombre">2do de Primaria</field>
+        </record>
+        <record id="curso_primaria_3" model="colegios.curso">
+            <field name="nombre">3ro de Primaria</field>
+        </record>
+        <record id="curso_primaria_4" model="colegios.curso">
+            <field name="nombre">4to de Primaria</field>
+        </record>
+        <record id="curso_primaria_5" model="colegios.curso">
+            <field name="nombre">5to de Primaria</field>
+        </record>
+        <record id="curso_primaria_6" model="colegios.curso">
+            <field name="nombre">6to de Primaria</field>
+        </record>
+
+        <!-- Cursos de Secundaria -->
+        <record id="curso_secundaria_1" model="colegios.curso">
+            <field name="nombre">1ro de Secundaria</field>
+        </record>
+        <record id="curso_secundaria_2" model="colegios.curso">
+            <field name="nombre">2do de Secundaria</field>
+        </record>
+        <record id="curso_secundaria_3" model="colegios.curso">
+            <field name="nombre">3ro de Secundaria</field>
+        </record>
+        <record id="curso_secundaria_4" model="colegios.curso">
+            <field name="nombre">4to de Secundaria</field>
+        </record>
+        <record id="curso_secundaria_5" model="colegios.curso">
+            <field name="nombre">5to de Secundaria</field>
+        </record>
+        <record id="curso_secundaria_6" model="colegios.curso">
+            <field name="nombre">6to de Secundaria</field>
+        </record>
+
+	<!-- Materias -->
+	
+
+        <!-- Materias de Primaria -->
+        <record id="materia_primaria_mate" model="colegios.materia">
+            <field name="nombre">Matemáticas</field>
+            <field name="distintivo">1</field>
+        </record>
+        <record id="materia_primaria_leng" model="colegios.materia">
+            <field name="nombre">Lenguaje</field>
+            <field name="distintivo">2</field>
+        </record>
+        <record id="materia_primaria_ciencias" model="colegios.materia">
+            <field name="nombre">Ciencias Naturales</field>
+            <field name="distintivo">3</field>
+        </record>
+        <record id="materia_primaria_sociales" model="colegios.materia">
+            <field name="nombre">Ciencias Sociales</field>
+            <field name="distintivo">4</field>
+        </record>
+        <record id="materia_primaria_edfis" model="colegios.materia">
+            <field name="nombre">Educación Física</field>
+            <field name="distintivo">5</field>
+        </record>
+        <record id="materia_primaria_artes" model="colegios.materia">
+            <field name="nombre">Artes</field>
+            <field name="distintivo">6</field>
+        </record>
+
+        <record id="materia_primaria_musica" model="colegios.materia">
+            <field name="nombre">Música</field>
+            <field name="distintivo">21</field>
+        </record>
+
+        <!-- Materias de Secundaria -->
+        <record id="materia_secundaria_mate" model="colegios.materia">
+            <field name="nombre">Matemáticas</field>
+            <field name="distintivo">1</field>
+        </record>
+        <record id="materia_secundaria_leng" model="colegios.materia">
+            <field name="nombre">Lenguaje y Literatura</field>
+            <field name="distintivo">2</field>
+        </record>
+        <record id="materia_secundaria_ciencias" model="colegios.materia">
+            <field name="nombre">Ciencias Naturales</field>
+            <field name="distintivo">3</field>
+        </record>
+        <record id="materia_secundaria_sociales" model="colegios.materia">
+            <field name="nombre">Ciencias Sociales</field>
+            <field name="distintivo">4field>
+        </record>
+        <record id="materia_secundaria_edfis" model="colegios.materia">
+            <field name="nombre">Educación Física</field>
+            <field name="distintivo">5/field>
+        </record>
+        <record id="materia_secundaria_artes" model="colegios.materia">
+            <field name="nombre">Artes</field>
+            <field name="distintivo">6/field>
+        </record>
+        <record id="materia_secundaria_fisica" model="colegios.materia">
+            <field name="nombre">Física</field>
+            <field name="distintivo">7field>
+        </record>
+        <record id="materia_secundaria_quimica" model="colegios.materia">
+            <field name="nombre">Químia</field>
+            <field name="distintivo">8/field>
+        </record>
+        <record id="materia_secundaria_psicologia" model="colegios.materia">
+            <field name="nombre">Psicología</field>
+            <field name="distintivo">9/field>
+        </record>
+        <record id="materia_secundaria_filosofia" model="colegios.materia">
+            <field name="nombre">Filosofía</field>
+            <field name="distintivo">10</field>
+        </record>
+        <record id="materia_secundaria_civica" model="colegios.materia">
+            <field name="nombre">Educación Cívica</field>
+            <field name="distintivo">11</field>
+        </record>
+        <record id="materia_secundaria_ingles" model="colegios.materia">
+            <field name="nombre">Inglés</field>
+            <field name="distintivo">12</field>
+        </record>
+        <record id="materia_secundaria_quechua" model="colegios.materia">
+            <field name="nombre">Quechua</field>
+            <field name="distintivo">13</field>
+        </record>
+        <record id="materia_secundaria_guarani" model="colegios.materia">
+            <field name="nombre">Guarani</field>
+            <field name="distintivo">14</field>
+        </record>
+        <record id="materia_secundaria_musica" model="colegios.materia">
+            <field name="nombre">Música</field>
+            <field name="distintivo">15</field>
+        </record>
+
+	<!-- periodo-->
+        
+
+	<record id="bimestre" model="colegios.periodo">
+            <field name="descripcion">Bimestre</field>
+        </record>
+	<record id="trimestre" model="colegios.periodo">
+            <field name="descripcion">Trimestre</field>
+        </record>
+        <record id="semestre" model="colegios.periodo">
+            <field name="descripcion">Semestre</field>
+        </record>
+        <record id="anio" model="colegios.periodo">
+            <field name="descripcion">Año</field>
+        </record>
+
+
+
+    </data>
+</odoo>

@@ -1,0 +1,350 @@
+<odoo>
+  <data>
+     <!-- Vistas para el modelo colegios.alumno -->
+    <record model="ir.ui.view" id="colegios.alumno_list">
+      <field name="name">colegios alumno list</field>
+      <field name="model">colegios.alumno</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ci"/>
+          <field name="nombres"/>
+          <field name="ap_paterno"/>
+          <field name="ap_materno"/>
+          <field name="fecha_nacimiento"/>
+          <field name="genero"/>        
+      </tree>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="colegios.alumno_form">
+      <field name="name">colegios alumno form</field>
+      <field name="model">colegios.alumno</field>
+      <field name="arch" type="xml">
+        <form>
+        <notebook>
+          <page string ="Datos Generales">
+             <div class="modal.content"
+              style = "box-shadow: 0px 0px 10px 0px #888888; opacity: 0.7; padding:20px">
+          <group>
+            <group>
+            <field name="fotografia" widget="image" options="{'size':(75,75)}"/>
+            <field name="ci"/>
+            <field name="nombres"/>
+            <field name="ap_paterno"/>
+            <field name="ap_materno"/>
+            </group>
+        
+            <group>
+            <field name="fecha_nacimiento"/>
+            <field name="genero"/>
+
+            </group>
+          </group>
+         </div>         
+          </page>
+
+          <page string ="Listado de Apoderado">
+        <div class="modal.content"
+        style = "box-shadow: 0px 0px 10px 0px #888888; opacity: 0.7; padding:20px">
+          <group >
+            <field name="apoderado_nombre"/>
+            <field name="parentesco_descripcion"/>
+            <field name="parentesco_id"/>
+          </group>
+         </div> 
+       </page>
+
+        <page string ="Listado de Profesores">
+        <div class="modal.content"
+        style = "box-shadow: 0px 0px 10px 0px #888888; opacity: 0.7; padding:20px">
+          <group >
+            <field name="profesor"/>
+          </group>
+         </div> 
+       </page>
+     </notebook>
+    </form>
+    </field>
+    </record>
+
+    <!-- Vistas para el modelo colegios.profesor -->
+    <record model="ir.ui.view" id="colegios.profesor_list">
+      <field name="name">colegios profesor list</field>
+      <field name="model">colegios.profesor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ci"/>
+          <field name="nombre"/>
+          <field name="ap_paterno"/>
+          <field name="ap_materno"/>
+          <field name="direccion"/>
+          <field name="genero"/>
+          <field name="fecha_nacimiento"/>
+          <field name="rda"/>
+          <field name="telefono"/>
+          <field name="correo"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="colegios.profesor_form">
+      <field name="name">colegios profesor form</field>
+      <field name="model">colegios.profesor</field>
+      <field name="arch" type="xml">
+        <form>
+        <notebook>
+          <page string ="Datos Generales">
+             <div class="modal.content"
+              style = "box-shadow: 0px 0px 10px 0px #888888; opacity: 0.7; padding:20px">
+          <group>
+            <group>
+            <field name="fotografia" widget="image" options="{'size':(75,75)}"/>
+            <field name="ci"/>
+            <field name="nombre"/>
+            <field name="ap_paterno"/>
+            <field name="ap_materno"/>
+            <field name="direccion"/>
+            <field name="genero"/>
+            </group>
+        
+            <group>
+            <field name="fecha_nacimiento"/>
+            <field name="rda"/>
+            <field name="telefono"/>
+            <field name="correo"/>
+            </group>
+          </group>
+         </div>         
+          </page>
+
+          <page string ="Listado de alumnos">
+        <div class="modal.content"
+        style = "box-shadow: 0px 0px 10px 0px #888888; opacity: 0.7; padding:20px">
+          <group >
+            <field name="alumno"/>
+          </group>
+         </div> 
+       </page>
+     </notebook>
+    </form>
+    </field>
+    </record>
+            <!-- Vistas para el modelo colegios.apoderado -->
+    <record model="ir.ui.view" id="colegios.apoderado_list">
+      <field name="name">colegios apoderado list</field>
+      <field name="model">colegios.apoderado</field>
+      <field name="arch" type="xml">
+      <tree>
+          <field name="ci"/>
+          <field name="nombre"/>
+          <field name="ap_paterno"/>
+          <field name="ap_materno"/>
+          <field name="genero"/>
+          <field name="ocupacion"/>
+          <field name="grado_instruccion"/>
+          <field name="fecha_nacimiento"/>
+          <field name="telefono"/>
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="colegios.apoderado_form">
+    <field name="name">colegios apoderado form</field>
+    <field name="model">colegios.apoderado</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="ci"/>
+          <field name="nombre"/>
+          <field name="ap_paterno"/>
+          <field name="ap_materno"/>
+          <field name="genero"/>
+          <field name="ocupacion"/>
+          <field name="grado_instruccion"/>
+          <field name="fecha_nacimiento"/>
+          <field name="telefono"/>
+        </group>
+      </form>
+    </field>
+  </record>
+
+<record model="ir.ui.view" id="colegios.parentesco_list">
+            <field name="name">colegios parentesco list</field>
+            <field name="model">colegios.parentesco</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="alumno_id"/>
+                    <field name="apoderado_id"/>
+                    <field name="descripcion"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Vistas para el modelo colegios.gestion -->
+  <record model="ir.ui.view" id="colegios.gestion_list">
+    <field name="name">colegios gestion list</field>
+    <field name="model">colegios.gestion</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="nombre"/>
+        <field name="fecha_inicio"/>
+        <field name="fecha_fin"/>
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="colegios.gestion_form">
+    <field name="name">colegios gestion form</field>
+    <field name="model">colegios.gestion</field>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+         <field name="nombre"/>
+         <field name="fecha_inicio"/>
+         <field name="fecha_fin"/>
+        </group>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="colegios.materia_list">
+      <field name="name">colegios materia list</field>
+      <field name="model">colegios.materia</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="distintivo"/>
+        </tree>
+      </field>
+    </record>
+
+  <record model="ir.ui.view" id="colegios.nota_list">
+      <field name="name">colegios nota list</field>
+      <field name="model">colegios.nota</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="alumno_name"/>
+          <field name="alumno_ap_pater"/>
+          <field name="gestion_name"/>
+          <field name="curso_name"/>
+          <field name="materia_name"/>
+          <field name="profesor_name"/>
+          <field name="periodo_name"/>
+          <field name="promedio_periodo"/>
+          <field name="descripcion"/>
+        </tree>
+      </field>
+    </record>
+    
+  <record model="ir.ui.view" id="colegios.inscripcion_list">
+      <field name="name">colegios inscripcion list</field>
+      <field name="model">colegios.inscripcion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="fecha"/>
+          <field name="alumno_name"/>
+          <field name="secretaria_name"/>
+          <field name="matricula_monto"/>
+        </tree>
+      </field>
+    </record>
+
+  <record model="ir.ui.view" id="colegios.pagomensual_list">
+      <field name="name">colegios pagomensual list</field>
+      <field name="model">colegios.pagomensual</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="alumno_name"/>
+          <field name="gestion_name"/>
+          <field name="curso_name"/>
+          <field name="mes"/>
+          <field name="monto"/>
+          <field name="estado"/>
+        </tree>
+      </field>
+    </record>
+
+        <!-- Acciones de ventana para colegios.alumno -->
+    <record model="ir.actions.act_window" id="colegios.alumno_action_window">
+      <field name="name">Alumnos</field>
+      <field name="res_model">colegios.alumno</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+      <record model="ir.actions.act_window" id="colegios.apoderado_action_window">
+      <field name="name">Apoderados</field>
+      <field name="res_model">colegios.apoderado</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.gestion_action_window">
+      <field name="name">Gestiones</field>
+      <field name="res_model">colegios.gestion</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+        <!-- Acciones de ventana para colegios.profesor -->
+    <record model="ir.actions.act_window" id="colegios.profesor_action_window">
+      <field name="name">Profesores</field>
+      <field name="res_model">colegios.profesor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="colegios.parentesco_action_window">
+      <field name="name">parentesco</field>
+      <field name="res_model">colegios.parentesco</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+      <record model="ir.actions.act_window" id="colegios.nota_action_window">
+      <field name="name">Notas</field>
+      <field name="res_model">colegios.nota</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.materia_action_window">
+      <field name="name">Materias</field>
+      <field name="res_model">colegios.materia</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.inscripcion_action_window">
+      <field name="name">Inscripciones</field>
+      <field name="res_model">colegios.inscripcion</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <record model="ir.actions.act_window" id="colegios.pagomensual_action_window">
+      <field name="name">Pago Mensual</field>
+      <field name="res_model">colegios.pagomensual</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Menú -->
+    <menuitem name="colegios" id="colegios.menu_root"/>
+
+    <menuitem name="Administración" id="colegios.alumno_menu_1" parent="colegios.menu_root"/>
+    <menuitem name="Boletines" id="colegios.nota_menu_2" parent="colegios.menu_root"/>
+    <menuitem name="Inscripciones" id="colegios.inscripcion_menu_3" parent="colegios.menu_root"/>
+
+
+    <menuitem name="Alumnos" id="colegios.alumno_menu_1_list" parent="colegios.alumno_menu_1"
+              action="colegios.alumno_action_window"/>
+
+    <menuitem name="Profesores" id="colegios.profesor_menu_1_list" parent="colegios.alumno_menu_1"
+              action="colegios.profesor_action_window"/>
+
+    <menuitem name="Apoderados" id="colegios.apoderado_menu_1_list" parent="colegios.alumno_menu_1"
+                  action="colegios.apoderado_action_window"/>
+
+    <menuitem name="Gestiones" id="colegios.gestion_menu_1_list" parent="colegios.alumno_menu_1"
+                  action="colegios.gestion_action_window"/>
+    
+    <menuitem name="Parentesco" id="colegios.parentesco_menu_1_list" parent="colegios.alumno_menu_1"
+                  action="colegios.parentesco_action_window"/>
+
+    <menuitem name="Materias" id="colegios.materia_menu_1_list" parent="colegios.alumno_menu_1"
+                  action="colegios.materia_action_window"/>              
+
+    <menuitem name="Notas" id="colegios.nota_menu_2_list" parent="colegios.nota_menu_2"
+                  action="colegios.nota_action_window"/>  
+
+    <menuitem name="Pagos mensuales" id="colegios.pagomensual_menu_3_list" parent="colegios.inscripcion_menu_3"
+                  action="colegios.pagomensual_action_window"/>
+
+    <menuitem name="Inscripcion del Alumno" id="colegios.inscripcion_menu_3_list" parent="colegios.inscripcion_menu_3"
+                  action="colegios.inscripcion_action_window"/>
+  </data>
+</odoo>
