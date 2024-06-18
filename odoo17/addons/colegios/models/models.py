@@ -42,14 +42,6 @@ class alumno(models.Model):
             alumno.parentesco_descripcion = descripcion_parentescos
 
 
-      # Validaciones adicionales
-    @api.constrains('fecha_nacimiento')
-    def _check_fecha_nacimiento(self):
-        for alumno in self:
-            if alumno.fecha_nacimiento and alumno.fecha_nacimiento > fields.Date.today():
-                raise ValidationErr('La fecha de nacimiento no puede estar en el futuro.')
-
-
 class profesor(models.Model):
     _name = 'colegios.profesor'
     _description = 'profesor'

@@ -338,6 +338,31 @@
 
 
 <!--implementacion-->
+    <record model="ir.ui.view" id="colegios.nota_kanban">
+      <field name="name">colegios nota kanban</field>
+      <field name="model">colegios.nota</field>
+      <field name="arch" type="xml">
+          <kanban>
+            <templantes>
+            <t t-name="kanban-box">
+            <div class ="oe_kanban_global_click card">
+               <div class = "card-header d-flex justify-content-between aling-items-center">
+               <strong class = "text-primary"> Nombre: <field name="materia_name"/>
+               </strong>
+
+               </div>
+              <div class= "card-body">
+                <field name="alumno_name"/> <field name="alumno_ap_pater"/><br/>
+                  <field name="gestion_name"/><br/>
+                  <field name="curso_name"/><br/>
+              </div>
+            </div>
+            </t>
+           </templantes>
+          </kanban>
+      </field>
+    </record>
+
 
         <!-- Acción de ventana para Notas Personales -->
         <record model="ir.actions.act_window" id="action_colegios_nota_personal">
@@ -350,7 +375,7 @@
     <record model="ir.actions.act_window" id="colegios.alumno_action_window">
       <field name="name">Alumnos</field>
       <field name="res_model">colegios.alumno</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
       <record model="ir.actions.act_window" id="colegios.apoderado_action_window">
       <field name="name">Apoderados</field>
@@ -377,7 +402,7 @@
       <record model="ir.actions.act_window" id="colegios.nota_action_window">
       <field name="name">Notas</field>
       <field name="res_model">colegios.nota</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
     <record model="ir.actions.act_window" id="colegios.materia_action_window">
       <field name="name">Materias</field>
