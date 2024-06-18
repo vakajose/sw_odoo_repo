@@ -63,6 +63,17 @@
           </group>
          </div> 
        </page>
+
+          <page string ="Curso">
+        <div class="modal.content"
+        style = "box-shadow: 0px 0px 10px 0px #888888; opacity: 0.7; padding:20px">
+          <group >
+            <field name="curso_id"/>
+          </group>
+         </div> 
+       </page>
+
+
      </notebook>
     </form>
     </field>
@@ -217,6 +228,18 @@
       </field>
     </record>
 
+
+<record model="ir.ui.view" id="colegios.curso_list">
+    <field name="name">colegios curso list</field>
+    <field name="model">colegios.curso</field>
+    <field name="arch" type="xml">
+        <!-- Definición de la vista tipo tree -->
+        <tree string="Colegios Curso Tree View">
+            <field name="nombre"/>
+        </tree>
+    </field>
+</record>
+
   <record model="ir.ui.view" id="colegios.nota_list">
       <field name="name">colegios nota list</field>
       <field name="model">colegios.nota</field>
@@ -263,6 +286,66 @@
       </field>
     </record>
 
+  <record model="ir.ui.view" id="colegios.horario_list">
+      <field name="name">colegios horario list</field>
+      <field name="model">colegios.horario</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="dia"/>
+          <field name="hora_ini"/>
+          <field name="hora_fin"/>
+        </tree>
+      </field>
+    </record>
+    
+ <!-- Vista de lista de Notas Personales -->
+        <record model="ir.ui.view" id="view_colegios_nota_personal_tree">
+            <field name="name">colegios.nota.personal.tree</field>
+            <field name="model">colegios.nota.personal</field>
+            <field name="arch" type="xml">
+                <tree string="Notas Personales">
+                    <field name="alumno_name"/>
+                    <field name="curso_name"/>
+                    <field name="materia_name"/>
+                    <field name="promedio_periodo"/>
+                    <field name="descripcion"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vista de formulario de Notas Personales -->
+        <record model="ir.ui.view" id="view_colegios_nota_personal_form">
+            <field name="name">colegios.nota.personal.form</field>
+            <field name="model">colegios.nota.personal</field>
+            <field name="arch" type="xml">
+                <form string="Notas Personales">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="alumno_id"/>
+                                <field name="curso_id"/>
+                                <field name="materia_id"/>
+                            </group>
+                            <group>
+                                <field name="promedio_periodo"/>
+                                <field name="descripcion"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+<!--implementacion-->
+
+        <!-- Acción de ventana para Notas Personales -->
+        <record model="ir.actions.act_window" id="action_colegios_nota_personal">
+            <field name="name">Notas Personales</field>
+            <field name="res_model">colegios.nota.personal</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
         <!-- Acciones de ventana para colegios.alumno -->
     <record model="ir.actions.act_window" id="colegios.alumno_action_window">
       <field name="name">Alumnos</field>
@@ -301,6 +384,11 @@
       <field name="res_model">colegios.materia</field>
       <field name="view_mode">tree,form</field>
     </record>
+    <record model="ir.actions.act_window" id="colegios.curso_action_window">
+      <field name="name">Curso</field>
+      <field name="res_model">colegios.curso</field>
+      <field name="view_mode">tree,form</field>
+    </record>
     <record model="ir.actions.act_window" id="colegios.inscripcion_action_window">
       <field name="name">Inscripciones</field>
       <field name="res_model">colegios.inscripcion</field>
@@ -312,17 +400,33 @@
       <field name="view_mode">tree,form</field>
     </record>
     
+    <record model="ir.actions.act_window" id="colegios.horario_action_window">
+      <field name="name">horario</field>
+      <field name="res_model">colegios.horario</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
     <!-- Menú -->
     <menuitem name="colegios" id="colegios.menu_root"/>
 
     <menuitem name="Administración" id="colegios.alumno_menu_1" parent="colegios.menu_root"/>
     <menuitem name="Boletines" id="colegios.nota_menu_2" parent="colegios.menu_root"/>
     <menuitem name="Inscripciones" id="colegios.inscripcion_menu_3" parent="colegios.menu_root"/>
+        
+        
+
+        <!-- Menú para Notas Personales -->
+    <menuitem name="Notas Personales" id="menu_notas_personales" parent="colegios.menu_root"/>
+   
+    <menuitem name="Lista de Notas Personales" id="menu_lista_notas_personales" parent="menu_notas_personales"
+                  action="action_colegios_nota_personal"/>
 
 
     <menuitem name="Alumnos" id="colegios.alumno_menu_1_list" parent="colegios.alumno_menu_1"
               action="colegios.alumno_action_window"/>
-
+        
     <menuitem name="Profesores" id="colegios.profesor_menu_1_list" parent="colegios.alumno_menu_1"
               action="colegios.profesor_action_window"/>
 
@@ -338,6 +442,9 @@
     <menuitem name="Materias" id="colegios.materia_menu_1_list" parent="colegios.alumno_menu_1"
                   action="colegios.materia_action_window"/>              
 
+    <menuitem name="Cursos" id="colegios.curso_menu_1_list" parent="colegios.alumno_menu_1"
+                  action="colegios.curso_action_window"/>              
+
     <menuitem name="Notas" id="colegios.nota_menu_2_list" parent="colegios.nota_menu_2"
                   action="colegios.nota_action_window"/>  
 
@@ -346,5 +453,9 @@
 
     <menuitem name="Inscripcion del Alumno" id="colegios.inscripcion_menu_3_list" parent="colegios.inscripcion_menu_3"
                   action="colegios.inscripcion_action_window"/>
+
+    <menuitem name="Horarios" id="colegios.horario_menu_3_list" parent="colegios.inscripcion_menu_3"
+                  action="colegios.horario_action_window"/>
+
   </data>
 </odoo>

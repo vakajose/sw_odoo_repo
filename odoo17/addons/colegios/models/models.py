@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields, api
+
+from odoo.exceptions import ValidationError # type: ignore
+from odoo import models, fields, api # type: ignore
 
 class alumno(models.Model):
     _name = 'colegios.alumno'
     _description = 'alumno'
 
-    ci = fields.Char(string="CI")
-    nombres = fields.Char(string="Nombres", required=True)
     fotografia = fields.Binary(string="Fotografia")
-    ap_paterno = fields.Char(string="Apellido Paterno")
-    ap_materno = fields.Char(string="Apellido Materno")
+    ci = fields.Char(string="CI", required=True, copy=False)
+    nombres = fields.Char(string="Nombres", required=True)
+    ap_paterno = fields.Char(string="Apellido Paterno", required=True)
+    ap_materno = fields.Char(string="Apellido Materno", required=True)
     fecha_nacimiento = fields.Date(string="Fecha de Nacimiento")
     genero = fields.Selection(
         [
@@ -20,17 +22,33 @@ class alumno(models.Model):
         default = "masculino",
         required = True,
      )
-    #nota_id = fields.One2many("colegios.nota","alumno_id",string = "Notas")
+    nota_id = fields.One2many("colegios.nota","alumno_id",string = "Notas")
     profesor = fields.One2many("colegios.nota","profesor_id", string="Profesores")
     apoderado_nombre = fields.Char(string="Apoderado", related="parentesco_id.apoderado_id.nombre", readonly=True)
     parentesco_descripcion = fields.Text(string="Parentesco", compute="_compute_parentesco_descripcion")
     parentesco_id = fields.One2many("colegios.parentesco", "alumno_id", string="Parentescos")
+
+    curso_id = fields.Many2one("colegios.curso", string="Curso")
+
+    # Restricciones únicas
+    _sql_constraints = [
+        ("unique_ci", "unique(ci)", "El número de CI debe ser único por alumno.")
+    ]
 
     @api.depends("parentesco_id")
     def _compute_parentesco_descripcion(self):
         for alumno in self:
             descripcion_parentescos = ", ".join(parentesco.descripcion for parentesco in alumno.parentesco_id)
             alumno.parentesco_descripcion = descripcion_parentescos
+
+
+      # Validaciones adicionales
+    @api.constrains('fecha_nacimiento')
+    def _check_fecha_nacimiento(self):
+        for alumno in self:
+            if alumno.fecha_nacimiento and alumno.fecha_nacimiento > fields.Date.today():
+                raise ValidationErr('La fecha de nacimiento no puede estar en el futuro.')
+
 
 class profesor(models.Model):
     _name = 'colegios.profesor'
@@ -114,14 +132,15 @@ class curso(models.Model):
     _description = 'curso'
 
     nombre = fields.Char(string="Nombre")
+    nota_id = fields.One2many("colegios.nota", "curso_id", string="Notas")
 
 class cursogestion(models.Model):
     _name = 'colegios.cursogestion'
     _description = 'Curso - Gestión'
 
-    nombre = fields.Many2one("colegios.gestion", string="Gestión", required=True)
-    description = fields.Many2one("colegios.curso", string="Curso", required=True)
-    turno = fields.Char(string="Turno")
+    gestion_id = fields.Many2one('colegios.gestion', string='Gestión', required=True)
+    curso_id= fields.Many2one('colegios.curso', string='Curso', required=True)
+    turno = fields.Selection([('mañana', 'Mañana'), ('tarde', 'Tarde')], string='Turno')
 
 class materia(models.Model):
     _name = 'colegios.materia'
@@ -147,8 +166,8 @@ class profesorespecialidad(models.Model):
     _name = 'colegios.profesorespecialidad'
     _description = 'profesor - Especialidad'
 
-    profesor = fields.Many2one("colegios.profesor", string="Profesor", required=True)
-    especialidad = fields.Many2one("colegios.especialidad", string="Especialidad", required=True)
+    profesor_id = fields.Many2one("colegios.profesor", string="Profesor", required=True)
+    especialidad_id = fields.Many2one("colegios.especialidad", string="Especialidad", required=True)
 
 class horario(models.Model):
     _name = 'colegios.horario'
@@ -319,6 +338,7 @@ class rude(models.Model):
     _name = 'colegios.rude'
     _description = 'RUDE'
 
+    codigo_rude = fields.Integer(string='Código RUDE', required=True)
     inscripcion_id = fields.Many2one("colegios.inscripcion", string="Inscripción", required=True)
     lugar_nac_id = fields.Many2one("colegios.lugar_nacimiento", string="Lugar de Nacimiento")
     direccionactual_id = fields.Many2one("colegios.direccion_actual", string="Dirección Actual")
@@ -340,9 +360,43 @@ class pagomensual(models.Model):
             if record.estado == 0 or record.monto == 10 or record.monto == 15 or record.monto == 19 or record.monto == 1 or record.monto == 2:
                 record.estado = "Deudor"
             else:
-                record.monto = "Cancelado"
+                record.estado = "Cancelado"
 
     alumno_name = fields.Char(string="Nombre del Alumno", related="alumno_id.nombres", readonly=True)
     gestion_name = fields.Char(string="Nombre de la Gestion", related="gestion_id.nombre", readonly=True)
     curso_name = fields.Char(string="Nombre del Curso", related="curso_id.nombre", readonly=True)
 
+class NotaPersonal(models.Model):
+    _name = 'colegios.nota.personal'
+    _description = 'Nota Personal'
+
+    alumno_id = fields.Many2one("colegios.alumno", string="Alumno", required=True)
+    curso_id = fields.Many2one("colegios.curso", string="Curso", required=True)
+    materia_id = fields.Many2one("colegios.materia", string="Materia", required=True)
+    promedio_periodo = fields.Integer(string="Promedio del Periodo")
+    descripcion = fields.Char(string="Descripción", compute= "_compute_descripcion")
+
+    @api.depends("promedio_periodo")
+    def _compute_descripcion(self):
+        for record in self:
+            if record.promedio_periodo >=51:
+                record.descripcion = "Aprobado"
+            else:
+                record.descripcion = "Reprobado"
+    def consultar_notas(self):
+        consulta_sql = """
+            SELECT alumno.nombres AS nombre_alumno, materia.nombre AS nombre_materia,
+                   curso.nombre AS nombre_curso, nota.promedio_periodo AS promedio_periodo,
+                   nota.descripcion AS estado
+            FROM colegios_nota_personal nota
+            INNER JOIN colegios_alumno alumno ON nota.alumno_id = alumno.id
+            INNER JOIN colegios_materia materia ON nota.materia_id = materia.id
+            INNER JOIN colegios_curso curso ON nota.curso_id = curso.id
+        """
+        self.env.cr.execute(consulta_sql)
+        resultados = self.env.cr.dictfetchall()
+        return resultados
+    # Campos relacionados para mostrar los nombres en lugar de IDs
+    alumno_name = fields.Char(string="Nombre del Alumno", related="alumno_id.nombres", readonly=True)
+    curso_name = fields.Char(string="Nombre del Curso", related="curso_id.nombre", readonly=True)
+    materia_name = fields.Char(string="Nombre de la Materia", related="materia_id.nombre", readonly=True)   

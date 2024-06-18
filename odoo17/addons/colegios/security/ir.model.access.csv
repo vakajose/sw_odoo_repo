@@ -24,3 +24,5 @@ access_colegios_lugarnac,colegios.lugarnac,model_colegios_lugarnac,base.group_us
 access_colegios_direccionactual,colegios.direccionactual,model_colegios_direccionactual,base.group_user,1,1,1,1
 access_colegios_rude,colegios.rude,model_colegios_rude,base.group_user,1,1,1,1
 access_colegios_pagomensual,colegios.pagomensual,model_colegios_pagomensual,base.group_user,1,1,1,1
+access_colegios_nota_personal,Notas Personales,model_colegios_nota_personal,base.group_user,1,1,1,1
+
